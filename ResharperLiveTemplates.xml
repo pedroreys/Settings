@@ -1,0 +1,31 @@
+<TemplatesExport family="Live Templates">
+  <Template uid="334b7b0e-620e-4308-9cfa-22622b217e7e" shortcut="pv" description="public virtual property" text="public virtual $type$ $property_name$ { get; set; }" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="type" expression="" initialRange="0" />
+      <Variable name="property_name" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="c66f3cb1-2174-4996-a303-dfcd32afb7bf" shortcut="pvs" description="public virtual string" text="public virtual string $property_name$ { get; set; }" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="property_name" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="7572f747-bf85-4f92-b404-993ff022ac81" shortcut="t" description="testmethod" text="[Test]&#xD;&#xA;public void $TestMethodName$()&#xD;&#xA;{&#xD;&#xA;&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="TestMethodName" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+  <Template uid="63e24df3-d8d0-4bb3-971b-f5205059614c" shortcut="tf" description="nunit test fixture" text="[TestFixture]&#xD;&#xA;public class $TestFixtureName$ : TestBase&#xD;&#xA;{&#xD;&#xA;&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="TestFixtureName" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+</TemplatesExport>
