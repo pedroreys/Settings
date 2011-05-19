@@ -555,20 +555,7 @@
 			</ToolsOptionsSubCategory>
 		</ToolsOptionsCategory>
 	</ToolsOptions>
-	<Category name="Code Analysis" Category="{533A534C-AD06-4B18-BBBC-BFD7C74F58CE}" Package="{72391CE3-743A-4a55-8927-4217541F6517}" RegisteredName="Code Analysis" PackageName="StanPackage"/>
 	<Category name="Database Tools" RegisteredName="Database Tools">
-		<Category name="Data Compare" Category="{B25F97C5-F845-458F-853B-3970D61FE4B9}" Package="{481A3758-A6D0-43E0-B1B8-4428BE962F8E}" RegisteredName="Data Compare" PackageName="VSTS for Database Professionals Sql Server">
-			<PropertyValue name="DataSettings">Default</PropertyValue>
-			<PropertyValue name="MaxCharsPerColumn">65535</PropertyValue>
-		</Category>
-		<Category name="Data Generator" Category="{7E055B73-82C8-4C8E-981F-FE58F889C213}" Package="{068E2583-0872-403B-AF4C-6C2A8F2D8C3E}" RegisteredName="Data Generator" PackageName="VSTS for Database Professionals">
-			<PropertyValue name="DataSinks">&lt;Dictionary /&gt;</PropertyValue>
-			<PropertyValue name="PopulateRowCount">50</PropertyValue>
-			<PropertyValue name="PreviewCount">50</PropertyValue>
-			<PropertyValue name="Seed">5</PropertyValue>
-			<PropertyValue name="SqlTimeout">60</PropertyValue>
-			<PropertyValue name="TableErrorThreshold">0</PropertyValue>
-		</Category>
 		<Category name="Schema Compare" RegisteredName="Schema Compare">
 			<Category name="Microsoft SQL Server 2005" Category="{FEA72D7C-B46E-47dc-9E8E-915ADC603B4E}" Package="{481A3758-A6D0-43E0-B1B8-4428BE962F8E}" RegisteredName="Microsoft SQL Server 2005" PackageName="VSTS for Database Professionals Sql Server">
 				<PropertyValue name="GeneralOptionsForCompare">000000000000010001000100000001</PropertyValue>
@@ -585,6 +572,18 @@
 				<PropertyValue name="UseSourceCollation">True</PropertyValue>
 			</Category>
 		</Category>
+		<Category name="Data Compare" Category="{B25F97C5-F845-458F-853B-3970D61FE4B9}" Package="{481A3758-A6D0-43E0-B1B8-4428BE962F8E}" RegisteredName="Data Compare" PackageName="VSTS for Database Professionals Sql Server">
+			<PropertyValue name="DataSettings">Default</PropertyValue>
+			<PropertyValue name="MaxCharsPerColumn">65535</PropertyValue>
+		</Category>
+		<Category name="Data Generator" Category="{7E055B73-82C8-4C8E-981F-FE58F889C213}" Package="{068E2583-0872-403B-AF4C-6C2A8F2D8C3E}" RegisteredName="Data Generator" PackageName="VSTS for Database Professionals">
+			<PropertyValue name="DataSinks">&lt;Dictionary /&gt;</PropertyValue>
+			<PropertyValue name="PopulateRowCount">50</PropertyValue>
+			<PropertyValue name="PreviewCount">50</PropertyValue>
+			<PropertyValue name="Seed">5</PropertyValue>
+			<PropertyValue name="SqlTimeout">60</PropertyValue>
+			<PropertyValue name="TableErrorThreshold">0</PropertyValue>
+		</Category>
 	</Category>
 	<Category name="Environment_Group" RegisteredName="Environment_Group">
 		<Category name="Environment_Aliases" Category="{AD334E74-368A-4c46-9AF8-F53ABF0775F2}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_Aliases" PackageName="Visual Studio Environment Package">
@@ -593,23 +592,23 @@
 				<Alias Name="props" Definition="View.PropertiesWindow"/>
 				<Alias Name="memory1" Definition="Debug.Memory1"/>
 				<Alias Name="memory2" Definition="Debug.Memory2"/>
-				<Alias Name="memory3" Definition="Debug.Memory3"/>
 				<Alias Name="Lcase" Definition="Edit.MakeLowercase"/>
-				<Alias Name="memory4" Definition="Debug.Memory4"/>
-				<Alias Name="locals" Definition="Debug.Locals"/>
+				<Alias Name="memory3" Definition="Debug.Memory3"/>
 				<Alias Name="kb" Definition="Debug.ListCallStack"/>
+				<Alias Name="locals" Definition="Debug.Locals"/>
+				<Alias Name="memory4" Definition="Debug.Memory4"/>
 				<Alias Name="da" Definition="Debug.ListMemory /Ansi"/>
-				<Alias Name="db" Definition="Debug.ListMemory /Format:OneByte"/>
 				<Alias Name="DelEOL" Definition="Edit.DeleteToEOL"/>
+				<Alias Name="db" Definition="Debug.ListMemory /Format:OneByte"/>
 				<Alias Name="dc" Definition="Debug.ListMemory /Format:FourBytes /Ansi"/>
 				<Alias Name="dd" Definition="Debug.ListMemory /Format:FourBytes"/>
 				<Alias Name="df" Definition="Debug.ListMemory /Format:Float"/>
-				<Alias Name="WordWrap" Definition="Edit.ToggleWordWrap"/>
 				<Alias Name="AddProj" Definition="File.AddNewProject"/>
+				<Alias Name="WordWrap" Definition="Edit.ToggleWordWrap"/>
 				<Alias Name="dq" Definition="Debug.ListMemory /Format:EightBytes"/>
 				<Alias Name="du" Definition="Debug.ListMemory /Unicode"/>
-				<Alias Name="designer" Definition="View.ViewDesigner"/>
 				<Alias Name="ListMembers" Definition="Edit.ListMembers"/>
+				<Alias Name="designer" Definition="View.ViewDesigner"/>
 				<Alias Name="code" Definition="View.ViewCode"/>
 				<Alias Name="ParamInfo" Definition="Edit.ParameterInfo"/>
 				<Alias Name="DelHSp" Definition="Edit.DeleteHorizontalWhiteSpace"/>
@@ -621,14 +620,14 @@
 				<Alias Name="TileV" Definition="Window.TileVertically"/>
 				<Alias Name="OutlineDefs" Definition="Edit.CollapsetoDefinitions"/>
 				<Alias Name="CloseAll" Definition="Window.CloseAllDocuments"/>
-				<Alias Name="ToggleBook" Definition="Edit.ToggleBookmark"/>
 				<Alias Name="InsertFile" Definition="Edit.InsertFileAsText"/>
+				<Alias Name="ToggleBook" Definition="Edit.ToggleBookmark"/>
 				<Alias Name="autos" Definition="Debug.Autos"/>
 				<Alias Name="SaveAll" Definition="File.SaveAll"/>
 				<Alias Name="new" Definition="File.NewFile"/>
 				<Alias Name="d" Definition="Debug.ListMemory"/>
-				<Alias Name="rtc" Definition="Debug.RunToCursor"/>
 				<Alias Name="navigate" Definition="View.WebBrowser"/>
+				<Alias Name="rtc" Definition="Debug.RunToCursor"/>
 				<Alias Name="g" Definition="Debug.Start"/>
 				<Alias Name="k" Definition="Debug.ListCallStack"/>
 				<Alias Name="format" Definition="Edit.FormatSelection"/>
@@ -636,10 +635,10 @@
 				<Alias Name="p" Definition="Debug.StepOver"/>
 				<Alias Name="q" Definition="Debug.StopDebugging"/>
 				<Alias Name="r" Definition="Debug.ListRegisters"/>
-				<Alias Name="t" Definition="Debug.StepInto"/>
 				<Alias Name="~*kb" Definition="Debug.ListCallStack /AllThreads"/>
-				<Alias Name="u" Definition="Debug.ListDisassembly"/>
+				<Alias Name="t" Definition="Debug.StepInto"/>
 				<Alias Name="nf" Definition="File.NewFile"/>
+				<Alias Name="u" Definition="Debug.ListDisassembly"/>
 				<Alias Name="registers" Definition="Debug.Registers"/>
 				<Alias Name="LineCut" Definition="Edit.LineCut"/>
 				<Alias Name="memory" Definition="memory1"/>
@@ -649,9 +648,9 @@
 				<Alias Name="DelBOL" Definition="Edit.DeleteToBOL"/>
 				<Alias Name="~*k" Definition="Debug.ListCallStack /AllThreads"/>
 				<Alias Name="NextBook" Definition="Edit.NextBookmark"/>
-				<Alias Name="TaskList" Definition="View.TaskList"/>
-				<Alias Name="Ucase" Definition="Edit.MakeUppercase"/>
 				<Alias Name="NewProj" Definition="File.NewProject"/>
+				<Alias Name="Ucase" Definition="Edit.MakeUppercase"/>
+				<Alias Name="TaskList" Definition="View.TaskList"/>
 				<Alias Name="Untabify" Definition="Edit.UntabifySelectedLines"/>
 				<Alias Name="GotoBrace" Definition="Edit.GotoBrace"/>
 				<Alias Name="cls" Definition="Edit.ClearAll"/>
@@ -660,29 +659,29 @@
 				<Alias Name="log" Definition="Tools.LogCommandWindowOutput"/>
 				<Alias Name="print" Definition="File.Print"/>
 				<Alias Name="op" Definition="File.OpenProject"/>
-				<Alias Name="eval" Definition="Debug.EvaluateStatement"/>
 				<Alias Name="alias" Definition="Tools.Alias"/>
+				<Alias Name="eval" Definition="Debug.EvaluateStatement"/>
 				<Alias Name="watch" Definition="Debug.Watch"/>
 				<Alias Name="cmd" Definition="View.CommandWindow"/>
-				<Alias Name="help" Definition="Help.F1Help"/>
 				<Alias Name="GotoLn" Definition="Edit.GoTo"/>
+				<Alias Name="help" Definition="Help.F1Help"/>
 				<Alias Name="disasm" Definition="Debug.Disassembly"/>
 				<Alias Name="redo" Definition="Edit.Redo"/>
-				<Alias Name="undo" Definition="Edit.Undo"/>
-				<Alias Name="tabify" Definition="Edit.TabifySelectedLines"/>
 				<Alias Name="LineDel" Definition="Edit.LineDelete"/>
+				<Alias Name="tabify" Definition="Edit.TabifySelectedLines"/>
+				<Alias Name="undo" Definition="Edit.Undo"/>
 				<Alias Name="StopOutlining" Definition="Edit.CollapsetoDefinitions"/>
 				<Alias Name="pr" Definition="Debug.StepOut"/>
-				<Alias Name="SaveAs" Definition="File.SaveSelectedItemsAs"/>
 				<Alias Name="FullScreen" Definition="View.FullScreen"/>
+				<Alias Name="SaveAs" Definition="File.SaveSelectedItemsAs"/>
 				<Alias Name="nav" Definition="navigate"/>
-				<Alias Name="SwapAnchor" Definition="Edit.SwapAnchor"/>
 				<Alias Name="exit" Definition="File.Exit"/>
-				<Alias Name="threads" Definition="Debug.Threads"/>
+				<Alias Name="SwapAnchor" Definition="Edit.SwapAnchor"/>
 				<Alias Name="PrevBook" Definition="Edit.PreviousBookmark"/>
+				<Alias Name="threads" Definition="Debug.Threads"/>
 				<Alias Name="close" Definition="File.Close"/>
-				<Alias Name="toolbox" Definition="View.Toolbox"/>
 				<Alias Name="bl" Definition="Debug.Breakpoints"/>
+				<Alias Name="toolbox" Definition="View.Toolbox"/>
 				<Alias Name="bp" Definition="Debug.ToggleBreakpoint"/>
 				<Alias Name="??" Definition="Debug.QuickWatch"/>
 				<Alias Name="StopFind" Definition="Edit.FindInFiles /stop"/>
@@ -763,7 +762,7 @@
 						<Column Name="Bitmap" Width="17" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
 						<Column Name="ProviderKnowsOrder" Width="19" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
 						<Column Name="Checked" Width="28" Visibility="Invisible" SortPriority="-1" SortDirection="Up"/>
-						<Column Name="Description" Width="484" Visibility="Visible" SortPriority="0" SortDirection="Up"/>
+						<Column Name="Description" Width="1492" Visibility="Visible" SortPriority="0" SortDirection="Up"/>
 						<Column Name="File" Width="171" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
 						<Column Name="Line" Width="19" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
 						<Column Name="Column" Width="70" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
@@ -784,8 +783,8 @@
 			<PropertyValue name="NumberOfDefaultEditors">0</PropertyValue>
 		</Category>
 		<Category name="Environment_UnifiedFind" Category="{DF00ADDF-C14C-4ffd-9325-634FD605850B}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_UnifiedFind" PackageName="Visual Studio Environment Package">
-			<PropertyValue name="Options">MatchCase=0 WholeWord=0 Hidden=1 Up=0 Selection=0 Block=0 KeepCase=0 SubFolders=1 KeepOpen=0 NameOnly=0 Plain Files FindAll</PropertyValue>
-			<PropertyValue name="Document Options">MatchCase=0 WholeWord=0 Hidden=0 Up=0 Selection=0 Block=0 KeepCase=0 SubFolders=1 KeepOpen=0 NameOnly=0 Plain Document ReplaceAll</PropertyValue>
+			<PropertyValue name="Options">MatchCase=0 WholeWord=0 Hidden=0 Up=0 Selection=0 Block=0 KeepCase=0 SubFolders=1 KeepOpen=0 NameOnly=0 Plain Solution Replace</PropertyValue>
+			<PropertyValue name="Document Options">MatchCase=0 WholeWord=0 Hidden=0 Up=0 Selection=0 Block=0 KeepCase=0 SubFolders=1 KeepOpen=0 NameOnly=0 Plain Solution Replace</PropertyValue>
 			<PropertyValue name="FiF Options">MatchCase=0 WholeWord=0 Hidden=1 Up=0 Selection=0 Block=0 KeepCase=0 SubFolders=1 KeepOpen=0 NameOnly=0 Plain Files FindAll</PropertyValue>
 			<PropertyValue name="Result list">2</PropertyValue>
 			<PropertyValue name="ShowEndOfSearch">1</PropertyValue>
@@ -802,7 +801,7 @@
 			<PropertyValue name="HideFindAfterMatchFound">0</PropertyValue>
 			<PropertyValue name="HitReplaced">1</PropertyValue>
 			<PropertyValue name="Syntax">Regex</PropertyValue>
-			<PropertyValue name="In Files Pane Display Options">0</PropertyValue>
+			<PropertyValue name="Quick Pane Display Options">32</PropertyValue>
 			<PropertyValue name="NumberOfScopes">0</PropertyValue>
 		</Category>
 		<Category name="Environment_FindSymbol" Category="{C93260BC-0C07-484a-8188-6F4763BD7FD4}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_FindSymbol" PackageName="Visual Studio Environment Package">
@@ -863,6 +862,7 @@
 							<Item Name="Operator" Foreground="0x00B7E2E8" Background="0x02000000" BoldFont="No"/>
 							<Item Name="outlining.verticalrule" Foreground="0x006F5C25" Background="0x02000000" BoldFont="No"/>
 							<Item Name="Preprocessor Keyword" Foreground="0x00BD82A0" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Razor Code" Foreground="0x02000000" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Class Identifier" Foreground="0x00FF5E5E" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Current Line Highlight" Foreground="0x02000000" Background="0x00464439" BoldFont="No"/>
 							<Item Name="ReSharper Delegate Identifier" Foreground="0x00008000" Background="0x02000000" BoldFont="No"/>
@@ -1221,6 +1221,9 @@
 					<RemoveShortcut Command="ReSharper_Bookmarks_GoToBookmark4" Scope="Global">Ctrl+4</RemoveShortcut>
 					<RemoveShortcut Command="Debug.ParallelTasks" Scope="Global">Ctrl+Shift+D, K</RemoveShortcut>
 					<RemoveShortcut Command="Debug.ParallelStacks" Scope="Global">Ctrl+Shift+D, S</RemoveShortcut>
+					<RemoveShortcut Command="RedGate.SQLPrompt.VSUI.Connect.LayOutSQL" Scope="Global">Ctrl+K, Ctrl+Y</RemoveShortcut>
+					<RemoveShortcut Command="ReSharper.ReSharper_GotoTypeDeclaration" Scope="Global">Ctrl+Shift+T</RemoveShortcut>
+					<RemoveShortcut Command="ReSharper.ReSharper_GotoTypeDeclaration" Scope="Text Editor">Ctrl+Shift+T</RemoveShortcut>
 					<Shortcut Command="Edit.SelectCurrentWord" Scope="Text Editor">Ctrl+W</Shortcut>
 					<Shortcut Command="Tools.ExternalCommand3" Scope="Global">Ctrl+Shift+Alt+C</Shortcut>
 					<Shortcut Command="Tools.ExternalCommand3" Scope="Text Editor">Ctrl+Shift+Alt+C</Shortcut>
@@ -1243,8 +1246,6 @@
 					<Shortcut Command="ReSharper.ReSharper_GotoBase" Scope="Global">Ctrl+U</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoInheritors" Scope="Text Editor">Ctrl+Alt+B</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_GotoInheritors" Scope="Global">Ctrl+Alt+B</Shortcut>
-					<Shortcut Command="ReSharper.ReSharper_GotoTypeDeclaration" Scope="Text Editor">Ctrl+Shift+T</Shortcut>
-					<Shortcut Command="ReSharper.ReSharper_GotoTypeDeclaration" Scope="Global">Ctrl+Shift+T</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_FindUsages" Scope="Text Editor">Alt+F7</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_FindUsages" Scope="Global">Alt+F7</Shortcut>
 					<Shortcut Command="ReSharper.ReSharper_FindUsagesAdvanced" Scope="Text Editor">Shift+Alt+F7</Shortcut>
@@ -1396,10 +1397,12 @@
 					<Shortcut Command="File.CloseAllButThis" Scope="Text Editor">Ctrl+Shift+4</Shortcut>
 					<Shortcut Command="ReSharper_TabControl_CloseAll" Scope="Text Editor">Ctrl+4</Shortcut>
 					<Shortcut Command="ReSharper_TabControl_CloseAll" Scope="Global">Ctrl+4</Shortcut>
+					<Shortcut Command="TestDriven.NET.RerunTests" Scope="Global">Ctrl+Shift+T</Shortcut>
+					<Shortcut Command="TestDriven.NET.RerunTests" Scope="Text Editor">Ctrl+Shift+T</Shortcut>
+					<Shortcut Command="TestDriven.NET.RerunWithDebugger" Scope="Text Editor">Ctrl+Shift+Alt+T</Shortcut>
+					<Shortcut Command="TestDriven.NET.RerunWithDebugger" Scope="Global">Ctrl+Shift+Alt+T</Shortcut>
 					<Shortcut Command="TestDriven.NET.RunTests" Scope="Global">Ctrl+T</Shortcut>
 					<Shortcut Command="TestDriven.NET.RunTests" Scope="Text Editor">Ctrl+T</Shortcut>
-					<Shortcut Command="RedGate.SQLPrompt.VSUI.Connect.RefreshCache" Scope="Global">Ctrl+Shift+D</Shortcut>
-					<Shortcut Command="RedGate.SQLPrompt.VSUI.Connect.LayOutSQL" Scope="Global">Ctrl+K, Ctrl+Y</Shortcut>
 				</UserShortcuts>
 			</KeyboardShortcuts>
 		</Category>
@@ -1418,10 +1421,10 @@
 					<modify Cmd="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000359" CmdPri="00500001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000019f" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000300" BeginGroup="false"/>
 				</DefaultCustomizations>
 				<UserCustomizations>
-					<add_group Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000201" GroupPri="0000ffff" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000430"/>
-					<add_group Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001"/>
-					<add_group Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002"/>
-					<add_group Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:0000020b" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000003"/>
+					<add_group Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000201" GroupPri="0000ffff" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000430"/>
+					<add_group Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001"/>
+					<add_group Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002"/>
+					<add_group Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:0000020b" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000003"/>
 					<add_toolbar Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001" Name="&amp;SQL Prompt 4" MenuType="menu"/>
 					<add_toolbar Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002" Name="&amp;Help" MenuType="menu"/>
 					<add_toolbar Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000003" Name="Serial &amp;Number" MenuType="menu"/>
@@ -1436,10 +1439,11 @@
 					<add CmdPri="02800001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000206" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000402">TestDriven.NET.RunTests</add>
 					<add CmdPri="02e00001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000206" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000402">TestDriven.NET.RerunTests</add>
 					<add CmdPri="0a008001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000216" GroupPri="06000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000402">TestDriven.NET.Reflector</add>
-					<add CmdPri="00800001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">TestDriven.NET.Build</add>
-					<add CmdPri="00c00001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">TestDriven.NET.RunTests</add>
-					<add CmdPri="00f00001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">TestDriven.NET.RerunTests</add>
-					<add CmdPri="00f80001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">TestDriven.NET.GoToTestOrCode</add>
+					<add CmdPri="007e0001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">TestDriven.NET.Build</add>
+					<add CmdPri="00bd0001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">TestDriven.NET.RunTests</add>
+					<add CmdPri="00ec4001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">TestDriven.NET.RerunTests</add>
+					<add CmdPri="00f42001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">TestDriven.NET.GoToTestOrCode</add>
+					<add CmdPri="00fa1001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">RedGate.Reflector.Addin.Connect10.Reflector_JumpToDefinition2</add>
 					<add CmdPri="06000001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c3" GroupPri="03500000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">TestDriven.NET.Reflector</add>
 					<add CmdPri="7f000001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c0" GroupPri="04000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">RedGate.SQLPrompt.VSUI.Connect.CreateSnippet</add>
 					<add CmdPri="bc000001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c0" GroupPri="04000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">RedGate.SQLPrompt.VSUI.Connect.LayOutSQL</add>
@@ -1450,28 +1454,32 @@
 					<add CmdPri="02018001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000263" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000414">TestDriven.NET.RerunTests</add>
 					<add CmdPri="01008001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000214" GroupPri="06000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000418">TestDriven.NET.RunTests</add>
 					<add CmdPri="01018001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000214" GroupPri="06000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000418">TestDriven.NET.RerunTests</add>
-					<add CmdPri="40000001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000201" GroupPri="0000ffff" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000430">TestDriven.NET.RunTests</add>
-					<add CmdPri="40010001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000201" GroupPri="0000ffff" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000430">TestDriven.NET.RerunTests</add>
+					<add CmdPri="40000001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000201" GroupPri="0000ffff" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000430">TestDriven.NET.RunTests</add>
+					<add CmdPri="40010001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000201" GroupPri="0000ffff" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000430">TestDriven.NET.RerunTests</add>
 					<add CmdPri="00800001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000020b" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000431">TestDriven.NET.RunTests</add>
 					<add CmdPri="00e00001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000020b" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000431">TestDriven.NET.RerunTests</add>
+					<add CmdPri="00010001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000275" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000445">RedGate.Reflector.Addin.Connect10.Reflector_JumpToDefinition2</add>
+					<add CmdPri="00020001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000275" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000445">RedGate.Reflector.Addin.Connect10.Reflector_FakeGoToDefinition</add>
+					<add CmdPri="00010001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000275" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000446">RedGate.Reflector.Addin.Connect10.Reflector_JumpToDefinition2</add>
+					<add CmdPri="00020001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000275" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000446">RedGate.Reflector.Addin.Connect10.Reflector_FakeGoToDefinition</add>
 					<add CmdPri="00800001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000209" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000451">TestDriven.NET.Reflector</add>
 					<add CmdPri="06000001" Group="{C9DD4A58-47FB-11D2-83E7-00C04F9902C1}:00000112" GroupPri="03000000" Menu="{C9DD4A58-47FB-11D2-83E7-00C04F9902C1}:00000504">TestDriven.NET.Reflector</add>
 					<add CmdPri="02000001" Group="{C9DD4A58-47FB-11D2-83E7-00C04F9902C1}:00000014" GroupPri="01000000" Menu="{C9DD4A58-47FB-11D2-83E7-00C04F9902C1}:00000505">TestDriven.NET.Reflector</add>
 					<add CmdPri="01800001" Group="{C9DD4A58-47FB-11D2-83E7-00C04F9902C1}:00000121" GroupPri="03000000" Menu="{C9DD4A58-47FB-11D2-83E7-00C04F9902C1}:00000509">TestDriven.NET.Reflector</add>
-					<add CmdPri="40000001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.RefreshCache</add>
-					<add CmdPri="40008001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.Connect</add>
-					<add CmdPri="40010001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.ChangeConnection</add>
-					<add CmdPri="40018001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.LayOutSQL</add>
-					<add CmdPri="40020001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.ShowOptions</add>
-					<add CmdPri="40028001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.SnippetManager</add>
-					<add CmdPri="40040001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.ShowCheckForUpdates</add>
-					<add CmdPri="40048001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.ShowAbout</add>
-					<add CmdPri="40000001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">RedGate.SQLPrompt.VSUI.Connect.ShowHelp</add>
-					<add CmdPri="40008001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">RedGate.SQLPrompt.VSUI.Connect.ShowSupportForum</add>
-					<add CmdPri="40010001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">RedGate.SQLPrompt.VSUI.Connect.ProvideFeedback</add>
-					<add CmdPri="40018001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">RedGate.SQLPrompt.VSUI.Connect.ShowLog</add>
-					<add CmdPri="40000001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:0000020b" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000003">RedGate.SQLPrompt.VSUI.Connect.ShowEnterLicenceKey</add>
-					<add CmdPri="40008001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:0000020b" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000003">RedGate.SQLPrompt.VSUI.Connect.ShowRemoveLicenceKey</add>
+					<add CmdPri="40000001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.RefreshCache</add>
+					<add CmdPri="40008001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.Connect</add>
+					<add CmdPri="40010001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.ChangeConnection</add>
+					<add CmdPri="40018001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.LayOutSQL</add>
+					<add CmdPri="40020001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.ShowOptions</add>
+					<add CmdPri="40028001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.SnippetManager</add>
+					<add CmdPri="40040001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.ShowCheckForUpdates</add>
+					<add CmdPri="40048001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.ShowAbout</add>
+					<add CmdPri="40000001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">RedGate.SQLPrompt.VSUI.Connect.ShowHelp</add>
+					<add CmdPri="40008001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">RedGate.SQLPrompt.VSUI.Connect.ShowSupportForum</add>
+					<add CmdPri="40010001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">RedGate.SQLPrompt.VSUI.Connect.ProvideFeedback</add>
+					<add CmdPri="40018001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">RedGate.SQLPrompt.VSUI.Connect.ShowLog</add>
+					<add CmdPri="40000001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:0000020b" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000003">RedGate.SQLPrompt.VSUI.Connect.ShowEnterLicenceKey</add>
+					<add CmdPri="40008001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:0000020b" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000003">RedGate.SQLPrompt.VSUI.Connect.ShowRemoveLicenceKey</add>
 					<remove Cmd="{00000000-0000-0000-0000-313370000001}:00000033" CmdPri="01000000" Group="{00000000-0000-0000-0000-313370000001}:00000193" GroupPri="09990000" Menu="{00000000-0000-0000-0000-313370000001}:00002011"/>
 					<modify Cmd="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000085" CmdPri="03000000" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000104" GroupPri="07000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000000"/>
 					<modify Cmd="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000088" CmdPri="ff000000" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000105" GroupPri="fd000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000000"/>
@@ -1481,10 +1489,11 @@
 					<modify CmdPri="02800001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000206" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000402" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/ZmaZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmf9mZpn/ZmaZ/2Zmmf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf9mZpn/ADPM/wAzmf+ZmZn/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf/MzMz/ADP//wAzzP8zM2b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/5mZmf/MzMz/ADP//wAzzP8zM2b/mZmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf/MzMz/ADP//wAz//8zM2b/ZmaZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/zMzM/5mZmf/MzMz/ADP//wAz//8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmmf8AM5n/ZmZm/5mZmf8AM///ADP//wAz//8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmmf8AM8z/ADPM/wAz//8AM///ADP//wAz//8zM2b/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM8z/ZmaZ/wAzzP8AM8z/ADOZ/wAzmf8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmZmb/ZmaZ/wAAAAAzM2b/ADP//wAzmf8zM2b/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/mZmZ/wAAAADMzMz/ADPM/wAzzP8AM5n/ADP//wAzzP8zM2b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/wAAAADMzMz/ADPM/wAzzP9mZpn/mZmZ/wAz//8AM8z/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZmZm/wAzmf8AAAAAAAAAAGZmmf8AM5n/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ/5mZmf8AAAAAAAAAAJmZmf8AM5n/mZmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzP8AAAAAAAAAAJmZmf+ZmZn/zMzM/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">TestDriven.NET.RunTests</modify>
 					<modify CmdPri="02e00001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000206" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000402">TestDriven.NET.RerunTests</modify>
 					<modify CmdPri="0a008001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000216" GroupPri="06000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000402" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEyuP/e8Xh/wAAAACk1OT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHPB3v9/xeD/d9Dz/1C85/9lyO7/Lard/6TT4/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE2w1f+H1/b/f9X2/5Hg/v+I3v7/f9z+/y+t3/8/rdj/psub/5LDd/+SxX//arJE/6bGof8AAAAAAAAAAAAAAABGpsr/bszw/4nc+/8bk8L/Qq7X/3XZ/v9Kv+v/TK6W/2SuYv9wt0b/abZD/2CyPP9ZsTn/stO3/wAAAABzwd7/cMzw/4HY+f+I3v7/U7/o/2/V+/9s1/7/L6a6/22zTf9wt0b/Vp4q/0uVJP9btD3/SJoh/2eYSf8AAAAAAAAAAAqJuf9hyPD/ZMzz/2/V+/8+teL/Lava/zCjrP9lr0n/abZD/1qqNP9ZsTn/UKsz/0ilKv9elDv/AAAAAAAAAABKpcb/K6fY/ymKqP85teX/X4yA/5KBPP9heVf/S5Ad/1+yPP9WrDb/TKUv/zmBDf8qYwD/Z5pJ/wAAAAAAAAAAAAAAAHp1RP/Fix//am9I/7OCJf/MjyD/nmIW/5d0Iv9shSD/On8H/y1pAP8wbgD/ob+h/wAAAAAAAAAAAAAAAAAAAACugj7/2aAj/9WbIv/SliH/zpEg/8iJH/++fhz/l2MU/1SDLf+iwaH/gql1/wAAAAAAAAAAAAAAAL6pgf+9gx3/xowf/9WbIv++gxz/pGwV/8iJH//Hhx7/p2kX/5VbFP+7spn/AAAAAAAAAAAAAAAAAAAAAAAAAACvgz7/w4ke/9WbIv/SliH/k1sU/45YEP/FhB3/xIId/8B9HP+pahj/vLKa/wAAAAAAAAAAAAAAAAAAAAAAAAAAn4Zf/6huF//SliH/zpEg/8WHHv/Hhx7/xIId/6tsGP+LVA//jlcQ/7Shf/8AAAAAAAAAAAAAAAAAAAAAAAAAALeXZ//JjB//rnIZ/8WHHv/FhR7/t3ca/8B9HP+maBf/jGEn/5BwQf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAwLL/jFUQ/5RbE/+/gBz/rW8Z/4RQDf+UWxL/iFMQ/62Wcf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKOa/+hglT/f0wK/4ZRDf+ifEj/mHxR/4paG/+/uqf/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKWWeP+ObkD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">TestDriven.NET.Reflector</modify>
-					<modify CmdPri="00800001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgICA/wAAAAAAAAAAAAAAAICAgP8AAAAAAAAAAAAAAACAgAD/AAAAAAAAAAAAAAAAgIAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAgICA/wAAAAAAAAAAAAAAAICAAP8AAAAAAAAAAAAAAACAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAACAgAD/AAAAAAAAAAAAAAAAgAAA/wAAAAAAAAAAAAAAAIAAAP8AAAAAAAAAAAAAAACAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgICA/wAAAAAAAAAAgAAA/wAAAAAAAAAAgICA/wAAAAAAAAAAAAAAAAAAAAAAAAAAgICA/wAAAAAAAAAAAAAAAICAgP8AAAAAAAAAAAAAAAAAAAAAAAAAAICAgP8AAAAAAAAAAAAAAACAgAD/AAAAAICAgP8AAAAAgICA/8DAwP/AwMD//wAA/4CAAP8AAAAAgICA/8DAwP/AwMD//wAA/4CAAP8AAAAAgIAA/wAAAACAgID/AAAAAAAAAACAgID//wAA/4CAAP8AAAAAAAAAAAAAAACAgID//wAA/4CAAP8AAAAAAAAAAIAAAP8AAAAAgICA/wAAAAD/////AAAAAICAAP8AAAAA/////wAAAAD/////AAAAAICAAP8AAAAA/////wAAAACAAAD/AAAAAICAgP//////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////gAAA/wAAAACAgAD//////4CAgP//////gICA//////+AgID//////4CAAP//////gAAA//////+AAAD//////4AAAP8AAAAAgICA//////////////////////////////////////////////////////////////////////+AAAD/AAAAAICAAP//////gICA//////+AgAD//////4AAAP//////gAAA//////+AAAD//////4AAAP//////gAAA/wAAAACAgAD//////////////////////////////////////////////////////////////////////4AAAP8AAAAAgAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">TestDriven.NET.Build</modify>
-					<modify CmdPri="00c00001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/ZmaZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmf9mZpn/ZmaZ/2Zmmf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf9mZpn/ADPM/wAzmf+ZmZn/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf/MzMz/ADP//wAzzP8zM2b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/5mZmf/MzMz/ADP//wAzzP8zM2b/mZmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf/MzMz/ADP//wAz//8zM2b/ZmaZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/zMzM/5mZmf/MzMz/ADP//wAz//8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmmf8AM5n/ZmZm/5mZmf8AM///ADP//wAz//8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmmf8AM8z/ADPM/wAz//8AM///ADP//wAz//8zM2b/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM8z/ZmaZ/wAzzP8AM8z/ADOZ/wAzmf8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmZmb/ZmaZ/wAAAAAzM2b/ADP//wAzmf8zM2b/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/mZmZ/wAAAADMzMz/ADPM/wAzzP8AM5n/ADP//wAzzP8zM2b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/wAAAADMzMz/ADPM/wAzzP9mZpn/mZmZ/wAz//8AM8z/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZmZm/wAzmf8AAAAAAAAAAGZmmf8AM5n/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ/5mZmf8AAAAAAAAAAJmZmf8AM5n/mZmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzP8AAAAAAAAAAJmZmf+ZmZn/zMzM/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">TestDriven.NET.RunTests</modify>
-					<modify CmdPri="00f00001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">TestDriven.NET.RerunTests</modify>
-					<modify CmdPri="00f80001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">TestDriven.NET.GoToTestOrCode</modify>
+					<modify CmdPri="007e0001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgICA/wAAAAAAAAAAAAAAAICAgP8AAAAAAAAAAAAAAACAgAD/AAAAAAAAAAAAAAAAgIAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAgICA/wAAAAAAAAAAAAAAAICAAP8AAAAAAAAAAAAAAACAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAACAgAD/AAAAAAAAAAAAAAAAgAAA/wAAAAAAAAAAAAAAAIAAAP8AAAAAAAAAAAAAAACAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgICA/wAAAAAAAAAAgAAA/wAAAAAAAAAAgICA/wAAAAAAAAAAAAAAAAAAAAAAAAAAgICA/wAAAAAAAAAAAAAAAICAgP8AAAAAAAAAAAAAAAAAAAAAAAAAAICAgP8AAAAAAAAAAAAAAACAgAD/AAAAAICAgP8AAAAAgICA/8DAwP/AwMD//wAA/4CAAP8AAAAAgICA/8DAwP/AwMD//wAA/4CAAP8AAAAAgIAA/wAAAACAgID/AAAAAAAAAACAgID//wAA/4CAAP8AAAAAAAAAAAAAAACAgID//wAA/4CAAP8AAAAAAAAAAIAAAP8AAAAAgICA/wAAAAD/////AAAAAICAAP8AAAAA/////wAAAAD/////AAAAAICAAP8AAAAA/////wAAAACAAAD/AAAAAICAgP//////AAAAAP////8AAAAA/////wAAAAD/////AAAAAP////8AAAAA/////wAAAAD/////gAAA/wAAAACAgAD//////4CAgP//////gICA//////+AgID//////4CAAP//////gAAA//////+AAAD//////4AAAP8AAAAAgICA//////////////////////////////////////////////////////////////////////+AAAD/AAAAAICAAP//////gICA//////+AgAD//////4AAAP//////gAAA//////+AAAD//////4AAAP//////gAAA/wAAAACAgAD//////////////////////////////////////////////////////////////////////4AAAP8AAAAAgAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/gAAA/4AAAP+AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" BeginGroup="false">TestDriven.NET.Build</modify>
+					<modify CmdPri="00bd0001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/ZmaZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmf9mZpn/ZmaZ/2Zmmf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf9mZpn/ADPM/wAzmf+ZmZn/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf/MzMz/ADP//wAzzP8zM2b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/5mZmf/MzMz/ADP//wAzzP8zM2b/mZmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf/MzMz/ADP//wAz//8zM2b/ZmaZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/zMzM/5mZmf/MzMz/ADP//wAz//8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmmf8AM5n/ZmZm/5mZmf8AM///ADP//wAz//8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmmf8AM8z/ADPM/wAz//8AM///ADP//wAz//8zM2b/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM8z/ZmaZ/wAzzP8AM8z/ADOZ/wAzmf8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmZmb/ZmaZ/wAAAAAzM2b/ADP//wAzmf8zM2b/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/mZmZ/wAAAADMzMz/ADPM/wAzzP8AM5n/ADP//wAzzP8zM2b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/wAAAADMzMz/ADPM/wAzzP9mZpn/mZmZ/wAz//8AM8z/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZmZm/wAzmf8AAAAAAAAAAGZmmf8AM5n/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ/5mZmf8AAAAAAAAAAJmZmf8AM5n/mZmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzP8AAAAAAAAAAJmZmf+ZmZn/zMzM/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">TestDriven.NET.RunTests</modify>
+					<modify CmdPri="00ec4001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">TestDriven.NET.RerunTests</modify>
+					<modify CmdPri="00f42001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">TestDriven.NET.GoToTestOrCode</modify>
+					<modify CmdPri="00fa1001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c4" GroupPri="00100000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d" Name="Open in .NET Reflector" BeginGroup="true">RedGate.Reflector.Addin.Connect10.Reflector_JumpToDefinition2</modify>
 					<modify CmdPri="06000001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c3" GroupPri="03500000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEyuP/e8Xh/wAAAACk1OT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHPB3v9/xeD/d9Dz/1C85/9lyO7/Lard/6TT4/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE2w1f+H1/b/f9X2/5Hg/v+I3v7/f9z+/y+t3/8/rdj/psub/5LDd/+SxX//arJE/6bGof8AAAAAAAAAAAAAAABGpsr/bszw/4nc+/8bk8L/Qq7X/3XZ/v9Kv+v/TK6W/2SuYv9wt0b/abZD/2CyPP9ZsTn/stO3/wAAAABzwd7/cMzw/4HY+f+I3v7/U7/o/2/V+/9s1/7/L6a6/22zTf9wt0b/Vp4q/0uVJP9btD3/SJoh/2eYSf8AAAAAAAAAAAqJuf9hyPD/ZMzz/2/V+/8+teL/Lava/zCjrP9lr0n/abZD/1qqNP9ZsTn/UKsz/0ilKv9elDv/AAAAAAAAAABKpcb/K6fY/ymKqP85teX/X4yA/5KBPP9heVf/S5Ad/1+yPP9WrDb/TKUv/zmBDf8qYwD/Z5pJ/wAAAAAAAAAAAAAAAHp1RP/Fix//am9I/7OCJf/MjyD/nmIW/5d0Iv9shSD/On8H/y1pAP8wbgD/ob+h/wAAAAAAAAAAAAAAAAAAAACugj7/2aAj/9WbIv/SliH/zpEg/8iJH/++fhz/l2MU/1SDLf+iwaH/gql1/wAAAAAAAAAAAAAAAL6pgf+9gx3/xowf/9WbIv++gxz/pGwV/8iJH//Hhx7/p2kX/5VbFP+7spn/AAAAAAAAAAAAAAAAAAAAAAAAAACvgz7/w4ke/9WbIv/SliH/k1sU/45YEP/FhB3/xIId/8B9HP+pahj/vLKa/wAAAAAAAAAAAAAAAAAAAAAAAAAAn4Zf/6huF//SliH/zpEg/8WHHv/Hhx7/xIId/6tsGP+LVA//jlcQ/7Shf/8AAAAAAAAAAAAAAAAAAAAAAAAAALeXZ//JjB//rnIZ/8WHHv/FhR7/t3ca/8B9HP+maBf/jGEn/5BwQf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAwLL/jFUQ/5RbE/+/gBz/rW8Z/4RQDf+UWxL/iFMQ/62Wcf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKOa/+hglT/f0wK/4ZRDf+ifEj/mHxR/4paG/+/uqf/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKWWeP+ObkD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">TestDriven.NET.Reflector</modify>
 					<modify CmdPri="7f000001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c0" GroupPri="04000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000065" BeginGroup="true">RedGate.SQLPrompt.VSUI.Connect.CreateSnippet</modify>
 					<modify CmdPri="bc000001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:000001c0" GroupPri="04000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000040d">RedGate.SQLPrompt.VSUI.Connect.LayOutSQL</modify>
@@ -1495,28 +1504,32 @@
 					<modify CmdPri="02018001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000263" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000414">TestDriven.NET.RerunTests</modify>
 					<modify CmdPri="01008001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000214" GroupPri="06000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000418" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/ZmaZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmf9mZpn/ZmaZ/2Zmmf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf9mZpn/ADPM/wAzmf+ZmZn/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf/MzMz/ADP//wAzzP8zM2b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/5mZmf/MzMz/ADP//wAzzP8zM2b/mZmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf/MzMz/ADP//wAz//8zM2b/ZmaZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/zMzM/5mZmf/MzMz/ADP//wAz//8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmmf8AM5n/ZmZm/5mZmf8AM///ADP//wAz//8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmmf8AM8z/ADPM/wAz//8AM///ADP//wAz//8zM2b/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM8z/ZmaZ/wAzzP8AM8z/ADOZ/wAzmf8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmZmb/ZmaZ/wAAAAAzM2b/ADP//wAzmf8zM2b/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/mZmZ/wAAAADMzMz/ADPM/wAzzP8AM5n/ADP//wAzzP8zM2b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/wAAAADMzMz/ADPM/wAzzP9mZpn/mZmZ/wAz//8AM8z/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZmZm/wAzmf8AAAAAAAAAAGZmmf8AM5n/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ/5mZmf8AAAAAAAAAAJmZmf8AM5n/mZmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzP8AAAAAAAAAAJmZmf+ZmZn/zMzM/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">TestDriven.NET.RunTests</modify>
 					<modify CmdPri="01018001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000214" GroupPri="06000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000418">TestDriven.NET.RerunTests</modify>
-					<modify CmdPri="40000001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000201" GroupPri="0000ffff" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000430" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/ZmaZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmf9mZpn/ZmaZ/2Zmmf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf9mZpn/ADPM/wAzmf+ZmZn/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf/MzMz/ADP//wAzzP8zM2b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/5mZmf/MzMz/ADP//wAzzP8zM2b/mZmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf/MzMz/ADP//wAz//8zM2b/ZmaZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/zMzM/5mZmf/MzMz/ADP//wAz//8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmmf8AM5n/ZmZm/5mZmf8AM///ADP//wAz//8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmmf8AM8z/ADPM/wAz//8AM///ADP//wAz//8zM2b/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM8z/ZmaZ/wAzzP8AM8z/ADOZ/wAzmf8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmZmb/ZmaZ/wAAAAAzM2b/ADP//wAzmf8zM2b/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/mZmZ/wAAAADMzMz/ADPM/wAzzP8AM5n/ADP//wAzzP8zM2b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/wAAAADMzMz/ADPM/wAzzP9mZpn/mZmZ/wAz//8AM8z/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZmZm/wAzmf8AAAAAAAAAAGZmmf8AM5n/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ/5mZmf8AAAAAAAAAAJmZmf8AM5n/mZmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzP8AAAAAAAAAAJmZmf+ZmZn/zMzM/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">TestDriven.NET.RunTests</modify>
-					<modify CmdPri="40010001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000201" GroupPri="0000ffff" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000430">TestDriven.NET.RerunTests</modify>
+					<modify CmdPri="40000001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000201" GroupPri="0000ffff" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000430" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/ZmaZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmf9mZpn/ZmaZ/2Zmmf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf9mZpn/ADPM/wAzmf+ZmZn/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf/MzMz/ADP//wAzzP8zM2b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/5mZmf/MzMz/ADP//wAzzP8zM2b/mZmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf/MzMz/ADP//wAz//8zM2b/ZmaZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/zMzM/5mZmf/MzMz/ADP//wAz//8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmmf8AM5n/ZmZm/5mZmf8AM///ADP//wAz//8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmmf8AM8z/ADPM/wAz//8AM///ADP//wAz//8zM2b/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM8z/ZmaZ/wAzzP8AM8z/ADOZ/wAzmf8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmZmb/ZmaZ/wAAAAAzM2b/ADP//wAzmf8zM2b/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/mZmZ/wAAAADMzMz/ADPM/wAzzP8AM5n/ADP//wAzzP8zM2b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/wAAAADMzMz/ADPM/wAzzP9mZpn/mZmZ/wAz//8AM8z/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZmZm/wAzmf8AAAAAAAAAAGZmmf8AM5n/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ/5mZmf8AAAAAAAAAAJmZmf8AM5n/mZmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzP8AAAAAAAAAAJmZmf+ZmZn/zMzM/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">TestDriven.NET.RunTests</modify>
+					<modify CmdPri="40010001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000201" GroupPri="0000ffff" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000430">TestDriven.NET.RerunTests</modify>
 					<modify CmdPri="00800001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000020b" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000431" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/ZmaZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmf9mZpn/ZmaZ/2Zmmf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf9mZpn/ADPM/wAzmf+ZmZn/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf/MzMz/ADP//wAzzP8zM2b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/5mZmf/MzMz/ADP//wAzzP8zM2b/mZmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/2Zmmf/MzMz/ADP//wAz//8zM2b/ZmaZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/zMzM/5mZmf/MzMz/ADP//wAz//8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmmf8AM5n/ZmZm/5mZmf8AM///ADP//wAz//8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGZmmf8AM8z/ADPM/wAz//8AM///ADP//wAz//8zM2b/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM8z/ZmaZ/wAzzP8AM8z/ADOZ/wAzmf8zM2b/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABmZmb/ZmaZ/wAAAAAzM2b/ADP//wAzmf8zM2b/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZn/mZmZ/wAAAADMzMz/ADPM/wAzzP8AM5n/ADP//wAzzP8zM2b/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/wAAAADMzMz/ADPM/wAzzP9mZpn/mZmZ/wAz//8AM8z/ZmZm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZmZm/wAzmf8AAAAAAAAAAGZmmf8AM5n/MzNm/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ/5mZmf8AAAAAAAAAAJmZmf8AM5n/mZmZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzP8AAAAAAAAAAJmZmf+ZmZn/zMzM/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">TestDriven.NET.RunTests</modify>
 					<modify CmdPri="00e00001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:0000020b" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000431">TestDriven.NET.RerunTests</modify>
+					<modify CmdPri="00010001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000275" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000445" Name="Open in .NET Reflector">RedGate.Reflector.Addin.Connect10.Reflector_JumpToDefinition2</modify>
+					<modify CmdPri="00020001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000275" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000445" Name="Go to Decompiled Definition">RedGate.Reflector.Addin.Connect10.Reflector_FakeGoToDefinition</modify>
+					<modify CmdPri="00010001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000275" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000446" Name="Open in .NET Reflector">RedGate.Reflector.Addin.Connect10.Reflector_JumpToDefinition2</modify>
+					<modify CmdPri="00020001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000275" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000446" Name="Go to Decompiled Definition">RedGate.Reflector.Addin.Connect10.Reflector_FakeGoToDefinition</modify>
 					<modify CmdPri="00800001" Group="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000209" GroupPri="01000000" Menu="{D309F791-903F-11D0-9EFC-00A0C911004F}:00000451" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEyuP/e8Xh/wAAAACk1OT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHPB3v9/xeD/d9Dz/1C85/9lyO7/Lard/6TT4/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE2w1f+H1/b/f9X2/5Hg/v+I3v7/f9z+/y+t3/8/rdj/psub/5LDd/+SxX//arJE/6bGof8AAAAAAAAAAAAAAABGpsr/bszw/4nc+/8bk8L/Qq7X/3XZ/v9Kv+v/TK6W/2SuYv9wt0b/abZD/2CyPP9ZsTn/stO3/wAAAABzwd7/cMzw/4HY+f+I3v7/U7/o/2/V+/9s1/7/L6a6/22zTf9wt0b/Vp4q/0uVJP9btD3/SJoh/2eYSf8AAAAAAAAAAAqJuf9hyPD/ZMzz/2/V+/8+teL/Lava/zCjrP9lr0n/abZD/1qqNP9ZsTn/UKsz/0ilKv9elDv/AAAAAAAAAABKpcb/K6fY/ymKqP85teX/X4yA/5KBPP9heVf/S5Ad/1+yPP9WrDb/TKUv/zmBDf8qYwD/Z5pJ/wAAAAAAAAAAAAAAAHp1RP/Fix//am9I/7OCJf/MjyD/nmIW/5d0Iv9shSD/On8H/y1pAP8wbgD/ob+h/wAAAAAAAAAAAAAAAAAAAACugj7/2aAj/9WbIv/SliH/zpEg/8iJH/++fhz/l2MU/1SDLf+iwaH/gql1/wAAAAAAAAAAAAAAAL6pgf+9gx3/xowf/9WbIv++gxz/pGwV/8iJH//Hhx7/p2kX/5VbFP+7spn/AAAAAAAAAAAAAAAAAAAAAAAAAACvgz7/w4ke/9WbIv/SliH/k1sU/45YEP/FhB3/xIId/8B9HP+pahj/vLKa/wAAAAAAAAAAAAAAAAAAAAAAAAAAn4Zf/6huF//SliH/zpEg/8WHHv/Hhx7/xIId/6tsGP+LVA//jlcQ/7Shf/8AAAAAAAAAAAAAAAAAAAAAAAAAALeXZ//JjB//rnIZ/8WHHv/FhR7/t3ca/8B9HP+maBf/jGEn/5BwQf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAwLL/jFUQ/5RbE/+/gBz/rW8Z/4RQDf+UWxL/iFMQ/62Wcf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKOa/+hglT/f0wK/4ZRDf+ifEj/mHxR/4paG/+/uqf/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKWWeP+ObkD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">TestDriven.NET.Reflector</modify>
 					<modify CmdPri="06000001" Group="{C9DD4A58-47FB-11D2-83E7-00C04F9902C1}:00000112" GroupPri="03000000" Menu="{C9DD4A58-47FB-11D2-83E7-00C04F9902C1}:00000504" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEyuP/e8Xh/wAAAACk1OT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHPB3v9/xeD/d9Dz/1C85/9lyO7/Lard/6TT4/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE2w1f+H1/b/f9X2/5Hg/v+I3v7/f9z+/y+t3/8/rdj/psub/5LDd/+SxX//arJE/6bGof8AAAAAAAAAAAAAAABGpsr/bszw/4nc+/8bk8L/Qq7X/3XZ/v9Kv+v/TK6W/2SuYv9wt0b/abZD/2CyPP9ZsTn/stO3/wAAAABzwd7/cMzw/4HY+f+I3v7/U7/o/2/V+/9s1/7/L6a6/22zTf9wt0b/Vp4q/0uVJP9btD3/SJoh/2eYSf8AAAAAAAAAAAqJuf9hyPD/ZMzz/2/V+/8+teL/Lava/zCjrP9lr0n/abZD/1qqNP9ZsTn/UKsz/0ilKv9elDv/AAAAAAAAAABKpcb/K6fY/ymKqP85teX/X4yA/5KBPP9heVf/S5Ad/1+yPP9WrDb/TKUv/zmBDf8qYwD/Z5pJ/wAAAAAAAAAAAAAAAHp1RP/Fix//am9I/7OCJf/MjyD/nmIW/5d0Iv9shSD/On8H/y1pAP8wbgD/ob+h/wAAAAAAAAAAAAAAAAAAAACugj7/2aAj/9WbIv/SliH/zpEg/8iJH/++fhz/l2MU/1SDLf+iwaH/gql1/wAAAAAAAAAAAAAAAL6pgf+9gx3/xowf/9WbIv++gxz/pGwV/8iJH//Hhx7/p2kX/5VbFP+7spn/AAAAAAAAAAAAAAAAAAAAAAAAAACvgz7/w4ke/9WbIv/SliH/k1sU/45YEP/FhB3/xIId/8B9HP+pahj/vLKa/wAAAAAAAAAAAAAAAAAAAAAAAAAAn4Zf/6huF//SliH/zpEg/8WHHv/Hhx7/xIId/6tsGP+LVA//jlcQ/7Shf/8AAAAAAAAAAAAAAAAAAAAAAAAAALeXZ//JjB//rnIZ/8WHHv/FhR7/t3ca/8B9HP+maBf/jGEn/5BwQf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAwLL/jFUQ/5RbE/+/gBz/rW8Z/4RQDf+UWxL/iFMQ/62Wcf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKOa/+hglT/f0wK/4ZRDf+ifEj/mHxR/4paG/+/uqf/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKWWeP+ObkD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">TestDriven.NET.Reflector</modify>
 					<modify CmdPri="02000001" Group="{C9DD4A58-47FB-11D2-83E7-00C04F9902C1}:00000014" GroupPri="01000000" Menu="{C9DD4A58-47FB-11D2-83E7-00C04F9902C1}:00000505" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEyuP/e8Xh/wAAAACk1OT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHPB3v9/xeD/d9Dz/1C85/9lyO7/Lard/6TT4/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE2w1f+H1/b/f9X2/5Hg/v+I3v7/f9z+/y+t3/8/rdj/psub/5LDd/+SxX//arJE/6bGof8AAAAAAAAAAAAAAABGpsr/bszw/4nc+/8bk8L/Qq7X/3XZ/v9Kv+v/TK6W/2SuYv9wt0b/abZD/2CyPP9ZsTn/stO3/wAAAABzwd7/cMzw/4HY+f+I3v7/U7/o/2/V+/9s1/7/L6a6/22zTf9wt0b/Vp4q/0uVJP9btD3/SJoh/2eYSf8AAAAAAAAAAAqJuf9hyPD/ZMzz/2/V+/8+teL/Lava/zCjrP9lr0n/abZD/1qqNP9ZsTn/UKsz/0ilKv9elDv/AAAAAAAAAABKpcb/K6fY/ymKqP85teX/X4yA/5KBPP9heVf/S5Ad/1+yPP9WrDb/TKUv/zmBDf8qYwD/Z5pJ/wAAAAAAAAAAAAAAAHp1RP/Fix//am9I/7OCJf/MjyD/nmIW/5d0Iv9shSD/On8H/y1pAP8wbgD/ob+h/wAAAAAAAAAAAAAAAAAAAACugj7/2aAj/9WbIv/SliH/zpEg/8iJH/++fhz/l2MU/1SDLf+iwaH/gql1/wAAAAAAAAAAAAAAAL6pgf+9gx3/xowf/9WbIv++gxz/pGwV/8iJH//Hhx7/p2kX/5VbFP+7spn/AAAAAAAAAAAAAAAAAAAAAAAAAACvgz7/w4ke/9WbIv/SliH/k1sU/45YEP/FhB3/xIId/8B9HP+pahj/vLKa/wAAAAAAAAAAAAAAAAAAAAAAAAAAn4Zf/6huF//SliH/zpEg/8WHHv/Hhx7/xIId/6tsGP+LVA//jlcQ/7Shf/8AAAAAAAAAAAAAAAAAAAAAAAAAALeXZ//JjB//rnIZ/8WHHv/FhR7/t3ca/8B9HP+maBf/jGEn/5BwQf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAwLL/jFUQ/5RbE/+/gBz/rW8Z/4RQDf+UWxL/iFMQ/62Wcf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKOa/+hglT/f0wK/4ZRDf+ifEj/mHxR/4paG/+/uqf/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKWWeP+ObkD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">TestDriven.NET.Reflector</modify>
 					<modify CmdPri="01800001" Group="{C9DD4A58-47FB-11D2-83E7-00C04F9902C1}:00000121" GroupPri="03000000" Menu="{C9DD4A58-47FB-11D2-83E7-00C04F9902C1}:00000509" CustomIcon="U0JTXygEAAAoAAAAEAAAAPD///8BACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEyuP/e8Xh/wAAAACk1OT/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHPB3v9/xeD/d9Dz/1C85/9lyO7/Lard/6TT4/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE2w1f+H1/b/f9X2/5Hg/v+I3v7/f9z+/y+t3/8/rdj/psub/5LDd/+SxX//arJE/6bGof8AAAAAAAAAAAAAAABGpsr/bszw/4nc+/8bk8L/Qq7X/3XZ/v9Kv+v/TK6W/2SuYv9wt0b/abZD/2CyPP9ZsTn/stO3/wAAAABzwd7/cMzw/4HY+f+I3v7/U7/o/2/V+/9s1/7/L6a6/22zTf9wt0b/Vp4q/0uVJP9btD3/SJoh/2eYSf8AAAAAAAAAAAqJuf9hyPD/ZMzz/2/V+/8+teL/Lava/zCjrP9lr0n/abZD/1qqNP9ZsTn/UKsz/0ilKv9elDv/AAAAAAAAAABKpcb/K6fY/ymKqP85teX/X4yA/5KBPP9heVf/S5Ad/1+yPP9WrDb/TKUv/zmBDf8qYwD/Z5pJ/wAAAAAAAAAAAAAAAHp1RP/Fix//am9I/7OCJf/MjyD/nmIW/5d0Iv9shSD/On8H/y1pAP8wbgD/ob+h/wAAAAAAAAAAAAAAAAAAAACugj7/2aAj/9WbIv/SliH/zpEg/8iJH/++fhz/l2MU/1SDLf+iwaH/gql1/wAAAAAAAAAAAAAAAL6pgf+9gx3/xowf/9WbIv++gxz/pGwV/8iJH//Hhx7/p2kX/5VbFP+7spn/AAAAAAAAAAAAAAAAAAAAAAAAAACvgz7/w4ke/9WbIv/SliH/k1sU/45YEP/FhB3/xIId/8B9HP+pahj/vLKa/wAAAAAAAAAAAAAAAAAAAAAAAAAAn4Zf/6huF//SliH/zpEg/8WHHv/Hhx7/xIId/6tsGP+LVA//jlcQ/7Shf/8AAAAAAAAAAAAAAAAAAAAAAAAAALeXZ//JjB//rnIZ/8WHHv/FhR7/t3ca/8B9HP+maBf/jGEn/5BwQf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAwLL/jFUQ/5RbE/+/gBz/rW8Z/4RQDf+UWxL/iFMQ/62Wcf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKKOa/+hglT/f0wK/4ZRDf+ifEj/mHxR/4paG/+/uqf/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKWWeP+ObkD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">TestDriven.NET.Reflector</modify>
-					<modify CmdPri="40000001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001" Name="&amp;Refresh Suggestions">RedGate.SQLPrompt.VSUI.Connect.RefreshCache</modify>
-					<modify CmdPri="40008001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001" BeginGroup="true">RedGate.SQLPrompt.VSUI.Connect.Connect</modify>
-					<modify CmdPri="40010001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.ChangeConnection</modify>
-					<modify CmdPri="40018001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001" Name="&amp;Format SQL" BeginGroup="true">RedGate.SQLPrompt.VSUI.Connect.LayOutSQL</modify>
-					<modify CmdPri="40020001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000068" BeginGroup="true">RedGate.SQLPrompt.VSUI.Connect.ShowOptions</modify>
-					<modify CmdPri="40028001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.SnippetManager</modify>
-					<modify CmdPri="40040001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.ShowCheckForUpdates</modify>
-					<modify CmdPri="40048001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000065">RedGate.SQLPrompt.VSUI.Connect.ShowAbout</modify>
-					<modify CmdPri="40000001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000067">RedGate.SQLPrompt.VSUI.Connect.ShowHelp</modify>
-					<modify CmdPri="40008001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">RedGate.SQLPrompt.VSUI.Connect.ShowSupportForum</modify>
-					<modify CmdPri="40010001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">RedGate.SQLPrompt.VSUI.Connect.ProvideFeedback</modify>
-					<modify CmdPri="40018001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">RedGate.SQLPrompt.VSUI.Connect.ShowLog</modify>
-					<modify CmdPri="40000001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:0000020b" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000003">RedGate.SQLPrompt.VSUI.Connect.ShowEnterLicenceKey</modify>
-					<modify CmdPri="40008001" Group="{9FC5D9D4-27D7-44D4-AD9B-13FD3C5DFADB}:0000020b" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000003">RedGate.SQLPrompt.VSUI.Connect.ShowRemoveLicenceKey</modify>
+					<modify CmdPri="40000001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001" Name="&amp;Refresh Suggestions">RedGate.SQLPrompt.VSUI.Connect.RefreshCache</modify>
+					<modify CmdPri="40008001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001" BeginGroup="true">RedGate.SQLPrompt.VSUI.Connect.Connect</modify>
+					<modify CmdPri="40010001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.ChangeConnection</modify>
+					<modify CmdPri="40018001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001" Name="&amp;Format SQL" BeginGroup="true">RedGate.SQLPrompt.VSUI.Connect.LayOutSQL</modify>
+					<modify CmdPri="40020001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000068" BeginGroup="true">RedGate.SQLPrompt.VSUI.Connect.ShowOptions</modify>
+					<modify CmdPri="40028001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.SnippetManager</modify>
+					<modify CmdPri="40040001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001">RedGate.SQLPrompt.VSUI.Connect.ShowCheckForUpdates</modify>
+					<modify CmdPri="40048001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:00000209" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000001" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000065">RedGate.SQLPrompt.VSUI.Connect.ShowAbout</modify>
+					<modify CmdPri="40000001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002" Icon="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000067">RedGate.SQLPrompt.VSUI.Connect.ShowHelp</modify>
+					<modify CmdPri="40008001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">RedGate.SQLPrompt.VSUI.Connect.ShowSupportForum</modify>
+					<modify CmdPri="40010001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">RedGate.SQLPrompt.VSUI.Connect.ProvideFeedback</modify>
+					<modify CmdPri="40018001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:0000020a" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000002">RedGate.SQLPrompt.VSUI.Connect.ShowLog</modify>
+					<modify CmdPri="40000001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:0000020b" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000003">RedGate.SQLPrompt.VSUI.Connect.ShowEnterLicenceKey</modify>
+					<modify CmdPri="40008001" Group="{651E8DC4-1B84-4DBD-95E8-87AD21E4409F}:0000020b" GroupPri="40000001" Menu="{19872127-B0D9-11D2-8792-00C04F7971A5}:00000003">RedGate.SQLPrompt.VSUI.Connect.ShowRemoveLicenceKey</modify>
 				</UserCustomizations>
 			</CommandBars>
 			<PropertyValue name="ShowLargeButtons">false</PropertyValue>
@@ -1580,7 +1593,7 @@
 					<Columns>
 						<Column Name="Priority" Width="20" Visibility="Visible" SortPriority="0" SortDirection="Up"/>
 						<Column Name="Checked" Width="28" Visibility="Visible" SortPriority="-1" SortDirection="Up"/>
-						<Column Name="Description" Width="852" Visibility="Visible" SortPriority="1" SortDirection="Up"/>
+						<Column Name="Description" Width="1860" Visibility="Visible" SortPriority="1" SortDirection="Up"/>
 					</Columns>
 				</Provider>
 				<Provider GUID="{18267819-C975-4292-8741-255590F76EB5}">
@@ -1628,8 +1641,8 @@
 				<Provider GUID="{5A2D2729-ADFF-4A2E-A44F-55EBBF5DF64B}">
 					<Columns>
 						<Column Name="Priority" Width="20" Visibility="Visible" SortPriority="0" SortDirection="Up"/>
-						<Column Name="ProviderKnowsOrder" Width="17" Visibility="Invisible" SortPriority="2" SortDirection="Up"/>
-						<Column Name="Description" Width="643" Visibility="Visible" SortPriority="7" SortDirection="Up"/>
+						<Column Name="ProviderKnowsOrder" Width="19" Visibility="Invisible" SortPriority="2" SortDirection="Up"/>
+						<Column Name="Description" Width="690" Visibility="Visible" SortPriority="7" SortDirection="Up"/>
 						<Column Name="File" Width="120" Visibility="Visible" SortPriority="4" SortDirection="Up"/>
 						<Column Name="Line" Width="70" Visibility="Visible" SortPriority="5" SortDirection="Up"/>
 						<Column Name="Column" Width="70" Visibility="Invisible" SortPriority="6" SortDirection="Up"/>
@@ -1655,206 +1668,245 @@
 			<PropertyValue name="ShowAllTabs">false</PropertyValue>
 			<PropertyValue name="Version">1</PropertyValue>
 			<PropertyValue name="DeletedTabCount">0</PropertyValue>
-			<PropertyValue name="Tab0.ID">ToolboxCategory_WinOEActivities</PropertyValue>
-			<PropertyValue name="Tab0.Name">Windows Workflow v3.0</PropertyValue>
+			<PropertyValue name="Tab0.Name">PDFView Components</PropertyValue>
 			<PropertyValue name="Tab0.View">0</PropertyValue>
 			<PropertyValue name="Tab0.UseDefaultName">true</PropertyValue>
-			<PropertyValue name="Tab0.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab0.Position">3</PropertyValue>
-			<PropertyValue name="Tab1.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1071</PropertyValue>
-			<PropertyValue name="Tab1.Name">Standard</PropertyValue>
+			<PropertyValue name="Tab0.RecordType">1</PropertyValue>
+			<PropertyValue name="Tab0.Position">0</PropertyValue>
+			<PropertyValue name="Tab1.Name">UI.Controls Components</PropertyValue>
 			<PropertyValue name="Tab1.View">0</PropertyValue>
 			<PropertyValue name="Tab1.UseDefaultName">true</PropertyValue>
-			<PropertyValue name="Tab1.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab1.Position">4</PropertyValue>
-			<PropertyValue name="Tab2.ID">Control Flow</PropertyValue>
-			<PropertyValue name="Tab2.Name">Control Flow</PropertyValue>
+			<PropertyValue name="Tab1.RecordType">1</PropertyValue>
+			<PropertyValue name="Tab1.Position">1</PropertyValue>
+			<PropertyValue name="Tab2.Name">UI Components</PropertyValue>
 			<PropertyValue name="Tab2.View">0</PropertyValue>
 			<PropertyValue name="Tab2.UseDefaultName">true</PropertyValue>
-			<PropertyValue name="Tab2.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab2.Position">5</PropertyValue>
-			<PropertyValue name="Tab3.ID">MSVSTORibbonV10</PropertyValue>
-			<PropertyValue name="Tab3.Name">Office Ribbon Controls</PropertyValue>
+			<PropertyValue name="Tab2.RecordType">1</PropertyValue>
+			<PropertyValue name="Tab2.Position">2</PropertyValue>
+			<PropertyValue name="Tab3.ID">ToolboxCategory_WinOEActivities</PropertyValue>
+			<PropertyValue name="Tab3.Name">Windows Workflow v3.0</PropertyValue>
 			<PropertyValue name="Tab3.View">0</PropertyValue>
 			<PropertyValue name="Tab3.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab3.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab3.Position">6</PropertyValue>
-			<PropertyValue name="Tab4.ID">XAML Common</PropertyValue>
-			<PropertyValue name="Tab4.Name">Common WPF Controls</PropertyValue>
+			<PropertyValue name="Tab3.Position">3</PropertyValue>
+			<PropertyValue name="Tab4.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1071</PropertyValue>
+			<PropertyValue name="Tab4.Name">Standard</PropertyValue>
 			<PropertyValue name="Tab4.View">0</PropertyValue>
 			<PropertyValue name="Tab4.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab4.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab4.Position">7</PropertyValue>
-			<PropertyValue name="Tab5.ID">ToolboxCategory_WinOEActivities_v3.5</PropertyValue>
-			<PropertyValue name="Tab5.Name">Windows Workflow v3.5</PropertyValue>
+			<PropertyValue name="Tab4.Position">4</PropertyValue>
+			<PropertyValue name="Tab5.ID">Control Flow</PropertyValue>
+			<PropertyValue name="Tab5.Name">Control Flow</PropertyValue>
 			<PropertyValue name="Tab5.View">0</PropertyValue>
 			<PropertyValue name="Tab5.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab5.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab5.Position">8</PropertyValue>
-			<PropertyValue name="Tab6.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1072</PropertyValue>
-			<PropertyValue name="Tab6.Name">Data </PropertyValue>
+			<PropertyValue name="Tab5.Position">5</PropertyValue>
+			<PropertyValue name="Tab6.ID">MSVSTORibbonV10</PropertyValue>
+			<PropertyValue name="Tab6.Name">Office Ribbon Controls</PropertyValue>
 			<PropertyValue name="Tab6.View">0</PropertyValue>
 			<PropertyValue name="Tab6.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab6.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab6.Position">9</PropertyValue>
-			<PropertyValue name="Tab7.ID">Flowchart</PropertyValue>
-			<PropertyValue name="Tab7.Name">Flowchart</PropertyValue>
+			<PropertyValue name="Tab6.Position">6</PropertyValue>
+			<PropertyValue name="Tab7.ID">XAML Common</PropertyValue>
+			<PropertyValue name="Tab7.Name">Common WPF Controls</PropertyValue>
 			<PropertyValue name="Tab7.View">0</PropertyValue>
 			<PropertyValue name="Tab7.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab7.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab7.Position">10</PropertyValue>
-			<PropertyValue name="Tab8.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1106</PropertyValue>
-			<PropertyValue name="Tab8.Name">All Windows Forms</PropertyValue>
+			<PropertyValue name="Tab7.Position">7</PropertyValue>
+			<PropertyValue name="Tab8.ID">ToolboxCategory_WinOEActivities_v3.5</PropertyValue>
+			<PropertyValue name="Tab8.Name">Windows Workflow v3.5</PropertyValue>
 			<PropertyValue name="Tab8.View">0</PropertyValue>
 			<PropertyValue name="Tab8.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab8.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab8.Position">11</PropertyValue>
-			<PropertyValue name="Tab9.ID">XAML Controls</PropertyValue>
-			<PropertyValue name="Tab9.Name">All WPF Controls</PropertyValue>
+			<PropertyValue name="Tab8.Position">8</PropertyValue>
+			<PropertyValue name="Tab9.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1072</PropertyValue>
+			<PropertyValue name="Tab9.Name">Data </PropertyValue>
 			<PropertyValue name="Tab9.View">0</PropertyValue>
 			<PropertyValue name="Tab9.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab9.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab9.Position">12</PropertyValue>
-			<PropertyValue name="Tab10.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1073</PropertyValue>
-			<PropertyValue name="Tab10.Name">Validation</PropertyValue>
+			<PropertyValue name="Tab9.Position">9</PropertyValue>
+			<PropertyValue name="Tab10.ID">Flowchart</PropertyValue>
+			<PropertyValue name="Tab10.Name">Flowchart</PropertyValue>
 			<PropertyValue name="Tab10.View">0</PropertyValue>
 			<PropertyValue name="Tab10.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab10.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab10.Position">13</PropertyValue>
-			<PropertyValue name="Tab11.ID">Messaging</PropertyValue>
-			<PropertyValue name="Tab11.Name">Messaging</PropertyValue>
+			<PropertyValue name="Tab10.Position">10</PropertyValue>
+			<PropertyValue name="Tab11.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1106</PropertyValue>
+			<PropertyValue name="Tab11.Name">All Windows Forms</PropertyValue>
 			<PropertyValue name="Tab11.View">0</PropertyValue>
 			<PropertyValue name="Tab11.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab11.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab11.Position">14</PropertyValue>
-			<PropertyValue name="Tab12.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1107</PropertyValue>
-			<PropertyValue name="Tab12.Name">Common Controls</PropertyValue>
+			<PropertyValue name="Tab11.Position">11</PropertyValue>
+			<PropertyValue name="Tab12.ID">XAML Controls</PropertyValue>
+			<PropertyValue name="Tab12.Name">All WPF Controls</PropertyValue>
 			<PropertyValue name="Tab12.View">0</PropertyValue>
 			<PropertyValue name="Tab12.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab12.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab12.Position">15</PropertyValue>
-			<PropertyValue name="Tab13.ID">Silverlight Common</PropertyValue>
-			<PropertyValue name="Tab13.Name">Common Silverlight Controls</PropertyValue>
+			<PropertyValue name="Tab12.Position">12</PropertyValue>
+			<PropertyValue name="Tab13.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1073</PropertyValue>
+			<PropertyValue name="Tab13.Name">Validation</PropertyValue>
 			<PropertyValue name="Tab13.View">0</PropertyValue>
 			<PropertyValue name="Tab13.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab13.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab13.Position">16</PropertyValue>
-			<PropertyValue name="Tab14.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1074</PropertyValue>
-			<PropertyValue name="Tab14.Name">Navigation</PropertyValue>
+			<PropertyValue name="Tab13.Position">13</PropertyValue>
+			<PropertyValue name="Tab14.ID">Messaging</PropertyValue>
+			<PropertyValue name="Tab14.Name">Messaging</PropertyValue>
 			<PropertyValue name="Tab14.View">0</PropertyValue>
 			<PropertyValue name="Tab14.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab14.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab14.Position">17</PropertyValue>
-			<PropertyValue name="Tab15.ID">Runtime</PropertyValue>
-			<PropertyValue name="Tab15.Name">Runtime</PropertyValue>
+			<PropertyValue name="Tab14.Position">14</PropertyValue>
+			<PropertyValue name="Tab15.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1107</PropertyValue>
+			<PropertyValue name="Tab15.Name">Common Controls</PropertyValue>
 			<PropertyValue name="Tab15.View">0</PropertyValue>
 			<PropertyValue name="Tab15.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab15.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab15.Position">18</PropertyValue>
-			<PropertyValue name="Tab16.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1102</PropertyValue>
-			<PropertyValue name="Tab16.Name">Containers</PropertyValue>
+			<PropertyValue name="Tab15.Position">15</PropertyValue>
+			<PropertyValue name="Tab16.ID">Silverlight Common</PropertyValue>
+			<PropertyValue name="Tab16.Name">Common Silverlight Controls</PropertyValue>
 			<PropertyValue name="Tab16.View">0</PropertyValue>
 			<PropertyValue name="Tab16.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab16.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab16.Position">19</PropertyValue>
-			<PropertyValue name="Tab17.ID">Silverlight Controls</PropertyValue>
-			<PropertyValue name="Tab17.Name">All Silverlight Controls</PropertyValue>
+			<PropertyValue name="Tab16.Position">16</PropertyValue>
+			<PropertyValue name="Tab17.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1074</PropertyValue>
+			<PropertyValue name="Tab17.Name">Navigation</PropertyValue>
 			<PropertyValue name="Tab17.View">0</PropertyValue>
 			<PropertyValue name="Tab17.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab17.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab17.Position">20</PropertyValue>
-			<PropertyValue name="Tab18.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1075</PropertyValue>
-			<PropertyValue name="Tab18.Name">Login</PropertyValue>
+			<PropertyValue name="Tab17.Position">17</PropertyValue>
+			<PropertyValue name="Tab18.ID">Runtime</PropertyValue>
+			<PropertyValue name="Tab18.Name">Runtime</PropertyValue>
 			<PropertyValue name="Tab18.View">0</PropertyValue>
 			<PropertyValue name="Tab18.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab18.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab18.Position">26</PropertyValue>
-			<PropertyValue name="Tab19.ID">Primitives</PropertyValue>
-			<PropertyValue name="Tab19.Name">Primitives</PropertyValue>
+			<PropertyValue name="Tab18.Position">18</PropertyValue>
+			<PropertyValue name="Tab19.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1102</PropertyValue>
+			<PropertyValue name="Tab19.Name">Containers</PropertyValue>
 			<PropertyValue name="Tab19.View">0</PropertyValue>
 			<PropertyValue name="Tab19.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab19.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab19.Position">27</PropertyValue>
-			<PropertyValue name="Tab20.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1103</PropertyValue>
-			<PropertyValue name="Tab20.Name">Menus &amp; Toolbars</PropertyValue>
+			<PropertyValue name="Tab19.Position">19</PropertyValue>
+			<PropertyValue name="Tab20.ID">Silverlight Controls</PropertyValue>
+			<PropertyValue name="Tab20.Name">All Silverlight Controls</PropertyValue>
 			<PropertyValue name="Tab20.View">0</PropertyValue>
 			<PropertyValue name="Tab20.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab20.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab20.Position">28</PropertyValue>
-			<PropertyValue name="Tab21.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1076</PropertyValue>
-			<PropertyValue name="Tab21.Name">WebParts</PropertyValue>
+			<PropertyValue name="Tab20.Position">20</PropertyValue>
+			<PropertyValue name="Tab21.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1075</PropertyValue>
+			<PropertyValue name="Tab21.Name">Login</PropertyValue>
 			<PropertyValue name="Tab21.View">0</PropertyValue>
 			<PropertyValue name="Tab21.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab21.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab21.Position">29</PropertyValue>
-			<PropertyValue name="Tab22.ID">Transaction</PropertyValue>
-			<PropertyValue name="Tab22.Name">Transaction</PropertyValue>
+			<PropertyValue name="Tab21.Position">26</PropertyValue>
+			<PropertyValue name="Tab22.ID">Primitives</PropertyValue>
+			<PropertyValue name="Tab22.Name">Primitives</PropertyValue>
 			<PropertyValue name="Tab22.View">0</PropertyValue>
 			<PropertyValue name="Tab22.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab22.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab22.Position">30</PropertyValue>
-			<PropertyValue name="Tab23.ID">Data</PropertyValue>
-			<PropertyValue name="Tab23.Name">Data</PropertyValue>
+			<PropertyValue name="Tab22.Position">27</PropertyValue>
+			<PropertyValue name="Tab23.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1103</PropertyValue>
+			<PropertyValue name="Tab23.Name">Menus &amp; Toolbars</PropertyValue>
 			<PropertyValue name="Tab23.View">0</PropertyValue>
 			<PropertyValue name="Tab23.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab23.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab23.Position">31</PropertyValue>
-			<PropertyValue name="Tab24.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1077</PropertyValue>
-			<PropertyValue name="Tab24.Name">Mobile Web Forms</PropertyValue>
+			<PropertyValue name="Tab23.Position">28</PropertyValue>
+			<PropertyValue name="Tab24.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1076</PropertyValue>
+			<PropertyValue name="Tab24.Name">WebParts</PropertyValue>
 			<PropertyValue name="Tab24.View">0</PropertyValue>
 			<PropertyValue name="Tab24.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab24.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab24.Position">32</PropertyValue>
-			<PropertyValue name="Tab25.ID">Collection</PropertyValue>
-			<PropertyValue name="Tab25.Name">Collection</PropertyValue>
+			<PropertyValue name="Tab24.Position">29</PropertyValue>
+			<PropertyValue name="Tab25.ID">Transaction</PropertyValue>
+			<PropertyValue name="Tab25.Name">Transaction</PropertyValue>
 			<PropertyValue name="Tab25.View">0</PropertyValue>
 			<PropertyValue name="Tab25.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab25.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab25.Position">33</PropertyValue>
-			<PropertyValue name="Tab26.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1101</PropertyValue>
-			<PropertyValue name="Tab26.Name">Components</PropertyValue>
+			<PropertyValue name="Tab25.Position">30</PropertyValue>
+			<PropertyValue name="Tab26.ID">Data</PropertyValue>
+			<PropertyValue name="Tab26.Name">Data</PropertyValue>
 			<PropertyValue name="Tab26.View">0</PropertyValue>
 			<PropertyValue name="Tab26.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab26.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab26.Position">34</PropertyValue>
-			<PropertyValue name="Tab27.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1078</PropertyValue>
-			<PropertyValue name="Tab27.Name">AJAX Extensions</PropertyValue>
+			<PropertyValue name="Tab26.Position">31</PropertyValue>
+			<PropertyValue name="Tab27.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1077</PropertyValue>
+			<PropertyValue name="Tab27.Name">Mobile Web Forms</PropertyValue>
 			<PropertyValue name="Tab27.View">0</PropertyValue>
 			<PropertyValue name="Tab27.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab27.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab27.Position">35</PropertyValue>
-			<PropertyValue name="Tab28.ID">Error Handling</PropertyValue>
-			<PropertyValue name="Tab28.Name">Error Handling</PropertyValue>
+			<PropertyValue name="Tab27.Position">32</PropertyValue>
+			<PropertyValue name="Tab28.ID">Collection</PropertyValue>
+			<PropertyValue name="Tab28.Name">Collection</PropertyValue>
 			<PropertyValue name="Tab28.View">0</PropertyValue>
 			<PropertyValue name="Tab28.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab28.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab28.Position">36</PropertyValue>
-			<PropertyValue name="Tab29.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1104</PropertyValue>
-			<PropertyValue name="Tab29.Name">Printing</PropertyValue>
+			<PropertyValue name="Tab28.Position">33</PropertyValue>
+			<PropertyValue name="Tab29.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1101</PropertyValue>
+			<PropertyValue name="Tab29.Name">Components</PropertyValue>
 			<PropertyValue name="Tab29.View">0</PropertyValue>
 			<PropertyValue name="Tab29.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab29.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab29.Position">37</PropertyValue>
-			<PropertyValue name="Tab30.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1079</PropertyValue>
-			<PropertyValue name="Tab30.Name">Dynamic Data</PropertyValue>
+			<PropertyValue name="Tab29.Position">34</PropertyValue>
+			<PropertyValue name="Tab30.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1078</PropertyValue>
+			<PropertyValue name="Tab30.Name">AJAX Extensions</PropertyValue>
 			<PropertyValue name="Tab30.View">0</PropertyValue>
 			<PropertyValue name="Tab30.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab30.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab30.Position">38</PropertyValue>
-			<PropertyValue name="Tab31.ID">Migration</PropertyValue>
-			<PropertyValue name="Tab31.Name">Migration</PropertyValue>
+			<PropertyValue name="Tab30.Position">35</PropertyValue>
+			<PropertyValue name="Tab31.ID">Error Handling</PropertyValue>
+			<PropertyValue name="Tab31.Name">Error Handling</PropertyValue>
 			<PropertyValue name="Tab31.View">0</PropertyValue>
 			<PropertyValue name="Tab31.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab31.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab31.Position">39</PropertyValue>
-			<PropertyValue name="Tab32.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1105</PropertyValue>
-			<PropertyValue name="Tab32.Name">Dialogs</PropertyValue>
+			<PropertyValue name="Tab31.Position">36</PropertyValue>
+			<PropertyValue name="Tab32.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1104</PropertyValue>
+			<PropertyValue name="Tab32.Name">Printing</PropertyValue>
 			<PropertyValue name="Tab32.View">0</PropertyValue>
 			<PropertyValue name="Tab32.UseDefaultName">true</PropertyValue>
 			<PropertyValue name="Tab32.RecordType">4</PropertyValue>
-			<PropertyValue name="Tab32.Position">40</PropertyValue>
-			<PropertyValue name="TabCount">33</PropertyValue>
-			<PropertyValue name="DeletedItemCount">0</PropertyValue>
+			<PropertyValue name="Tab32.Position">37</PropertyValue>
+			<PropertyValue name="Tab33.ID">{e7f851c8-6267-4794-b0fe-7bcab6dacbb4}-#1079</PropertyValue>
+			<PropertyValue name="Tab33.Name">Dynamic Data</PropertyValue>
+			<PropertyValue name="Tab33.View">0</PropertyValue>
+			<PropertyValue name="Tab33.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab33.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab33.Position">38</PropertyValue>
+			<PropertyValue name="Tab34.ID">Migration</PropertyValue>
+			<PropertyValue name="Tab34.Name">Migration</PropertyValue>
+			<PropertyValue name="Tab34.View">0</PropertyValue>
+			<PropertyValue name="Tab34.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab34.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab34.Position">39</PropertyValue>
+			<PropertyValue name="Tab35.ID">{7b5d447b-0b12-41ea-a84e-c822034422d4}-#1105</PropertyValue>
+			<PropertyValue name="Tab35.Name">Dialogs</PropertyValue>
+			<PropertyValue name="Tab35.View">0</PropertyValue>
+			<PropertyValue name="Tab35.UseDefaultName">true</PropertyValue>
+			<PropertyValue name="Tab35.RecordType">4</PropertyValue>
+			<PropertyValue name="Tab35.Position">40</PropertyValue>
+			<PropertyValue name="TabCount">36</PropertyValue>
+			<PropertyValue name="DeletedItem0.ID">Pointer</PropertyValue>
+			<PropertyValue name="DeletedItem0.Name">Pointer</PropertyValue>
+			<PropertyValue name="DeletedItem0.TabID">General</PropertyValue>
+			<PropertyValue name="DeletedItem0.Tab">General</PropertyValue>
+			<PropertyValue name="DeletedItem1.ID">Pointer</PropertyValue>
+			<PropertyValue name="DeletedItem1.Name">Pointer</PropertyValue>
+			<PropertyValue name="DeletedItem1.TabID">Clipboard Ring</PropertyValue>
+			<PropertyValue name="DeletedItem1.Tab">Clipboard Ring</PropertyValue>
+			<PropertyValue name="DeletedItem2.ID">Pointer</PropertyValue>
+			<PropertyValue name="DeletedItem2.Name">Pointer</PropertyValue>
+			<PropertyValue name="DeletedItem2.TabID">Excel Controls</PropertyValue>
+			<PropertyValue name="DeletedItem2.Tab">Excel Controls</PropertyValue>
+			<PropertyValue name="DeletedItem3.ID">Pointer</PropertyValue>
+			<PropertyValue name="DeletedItem3.Name">Pointer</PropertyValue>
+			<PropertyValue name="DeletedItem3.TabID">Word Controls</PropertyValue>
+			<PropertyValue name="DeletedItem3.Tab">Word Controls</PropertyValue>
+			<PropertyValue name="DeletedItem4.ID">Pointer</PropertyValue>
+			<PropertyValue name="DeletedItem4.Name">Pointer</PropertyValue>
+			<PropertyValue name="DeletedItem4.TabID">XAML Common</PropertyValue>
+			<PropertyValue name="DeletedItem4.Tab">Common WPF Controls</PropertyValue>
+			<PropertyValue name="DeletedItem5.ID">Pointer</PropertyValue>
+			<PropertyValue name="DeletedItem5.Name">Pointer</PropertyValue>
+			<PropertyValue name="DeletedItem5.TabID">XAML Controls</PropertyValue>
+			<PropertyValue name="DeletedItem5.Tab">All WPF Controls</PropertyValue>
+			<PropertyValue name="DeletedItemCount">6</PropertyValue>
 			<PropertyValue name="Item0.DataProvider">{00000000-0000-0000-0000-000000000000}</PropertyValue>
 			<PropertyValue name="Item0.ID">Microsoft.Office.Tools.Ribbon.RibbonBoxImpl, Microsoft.Office.Tools.Common.Implementation, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</PropertyValue>
 			<PropertyValue name="Item0.Name">Box</PropertyValue>
@@ -2094,29 +2146,29 @@
 				<WindowProfile xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:wm="clr-namespace:Microsoft.VisualStudio.Platform.WindowManagement;assembly=Microsoft.VisualStudio.Platform.WindowManagement" Name="Design" xmlns="clr-namespace:Microsoft.VisualStudio.PlatformUI.Shell;assembly=Microsoft.VisualStudio.Shell.ViewManager">
 					<MainSite IsVisible="True">
 						<AutoHideRoot IsVisible="True" DockedHeight="*" DockedWidth="*">
-							<AutoHideChannel Orientation="Vertical" IsVisible="True">
+							<AutoHideChannel Orientation="Vertical">
 								<AutoHideGroup>
 									<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="0" IconResourceID="4" IconResourcePackage="8d8529d3-625d-4496-8354-3dad630ecc1b" Name="ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}" DockedHeight="768" DockedWidth="204.8" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="537.6" FloatingWidth="204.8"/>
 									<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="0" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}" DockedHeight="768" DockedWidth="204.8" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="537.6" FloatingWidth="204.8"/>
-								</AutoHideGroup>
-								<AutoHideGroup IsVisible="True">
-									<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="2" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}" IsVisible="True" DockedHeight="530" DockedWidth="197" FloatingTop="374" FloatingLeft="-59" FloatingHeight="538" FloatingWidth="205"/>
 								</AutoHideGroup>
 							</AutoHideChannel>
 							<AutoHideChannel Dock="Right" Orientation="Vertical"/>
 							<AutoHideChannel Dock="Top"/>
 							<AutoHideChannel Dock="Bottom" IsVisible="True">
 								<AutoHideGroup IsVisible="True">
-									<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="15" IconResourceID="6650" IconResourcePackage="4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2" Name="ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}" IsVisible="True" DockedHeight="220.630287648054" DockedWidth="1626" FloatingTop="1023" FloatingLeft="971" FloatingHeight="591" FloatingWidth="1634"/>
+									<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="3" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}" IsVisible="True" DockedHeight="334.655813953488" DockedWidth="921" FloatingTop="676" FloatingLeft="147" FloatingHeight="430" FloatingWidth="929"/>
 								</AutoHideGroup>
 								<AutoHideGroup IsVisible="True">
-									<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="3" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}" IsVisible="True" DockedHeight="334.655813953488" DockedWidth="921" FloatingTop="676" FloatingLeft="147" FloatingHeight="430" FloatingWidth="929"/>
+									<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="6" IconResourceID="6650" IconResourcePackage="4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2" Name="ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}" IsVisible="True" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="684" FloatingLeft="3" FloatingHeight="691" FloatingWidth="861"/>
+								</AutoHideGroup>
+								<AutoHideGroup IsVisible="True">
+									<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="15" IconResourceID="6650" IconResourcePackage="4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2" Name="ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}" IsVisible="True" DockedHeight="220.630287648054" DockedWidth="1626" AutoHideHeight="526" FloatingTop="1023" FloatingLeft="971" FloatingHeight="591" FloatingWidth="1634"/>
 								</AutoHideGroup>
 							</AutoHideChannel>
 							<DockRoot IsVisible="True" DockedHeight="*" DockedWidth="*">
 								<DockGroup Orientation="Vertical" IsVisible="True" DockedHeight="*" DockedWidth="*">
 									<DockGroup IsVisible="True" DockedHeight="*" DockedWidth="*">
-										<ViewBookmark Name="ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"/>
+										<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="2" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}" IsSelected="True" DockedHeight="530" DockedWidth="423" AutoHideWidth="510" FloatingTop="374" FloatingLeft="-59" FloatingHeight="538" FloatingWidth="205"/>
 										<DockGroup Orientation="Vertical" IsVisible="True" DockedHeight="*" DockedWidth="*">
 											<DockGroup IsVisible="True" DockedHeight="*" DockedWidth="*">
 												<TabGroup IsSelected="True" DockedHeight="530" DockedWidth="470">
@@ -2142,25 +2194,28 @@
 																<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="DontForceCreate" Name="ST:0:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="537.6" FloatingWidth="716.8"/>
 																<wm:ToolWindowView ContextVisibilityEnabled="False" Name="ST:0:0:{46c87f81-5a06-43a8-9e25-85d33bac49f8}" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="537.6" FloatingWidth="716.8"/>
 																<wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{99b8fa2f-ab90-4f57-9c32-949f146f1914}" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="537.6" FloatingWidth="716.8"/>
-																<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="4" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="384" FloatingWidth="512"/>
 																<wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{70f2cc26-5085-4e06-a614-e153db4d01ef}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
 																<wm:ToolWindowView ForceCreate="DontForceCreate" Name="ST:0:0:{93a69444-e846-4571-9e03-a8433ad9ddf9}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
 																<wm:ToolWindowView ForceCreate="DontForceCreate" Name="ST:0:0:{cb4d394c-6408-4607-8c42-0910d3147a4e}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
+																<wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{1820bae5-c385-4492-9de5-e35c9cf17b18}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
+																<wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{66e82009-f551-422e-814d-f717e635fff9}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
+																<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="4" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}" IsVisible="True" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="384" FloatingWidth="512"/>
 																<ViewBookmark Name="D:0:0:{3B0587DF-A31E-43AF-ADA4-66CB60A0138D}|HelloAzure.ccproj|C:\dev\training\azurebootcamp\HelloAzure\ServiceDefinition.csdef||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|" ViewBookmarkType="DocumentWell"/>
 																<ViewBookmark Name="D:0:0:{9AA9FD4D-58F4-4148-9376-EE09868E2B73}|IntegrationTests\IntegrationTests.csproj|c:\dev\headspring\udelldbsupport\src\integrationtests\prodgrpsls_smgmtest_with_lauries_values.csv||{8B382828-6202-11D1-8870-0000F87579D2}" ViewBookmarkType="DocumentWell"/>
 																<ViewBookmark Name="D:0:0:{FBE3CFE2-CAC1-4652-9F49-18F35B65123D}|Infrastructure\Infrastructure.csproj|c:\dev\headspring\udelldbsupport\src\infrastructure\dataaccess\mappings\spendmoregetmorehistoryentry.hbm.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}" ViewBookmarkType="DocumentWell"/>
 																<ViewBookmark Name="D:0:0:{9A25B8B5-5101-449B-A00D-BCFE27471316}|DataImporter\DataImporter.csproj|c:\dev\headspring\tcipserverimport\src\dataimporter\certificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}" ViewBookmarkType="DocumentWell"/>
 																<ViewBookmark Name="ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}" AccessOrder="1" ViewBookmarkType="DocumentWell"/>
+																<ViewBookmark Name="D:0:0:{98200972-A038-4DA8-8917-CBC4895175DC}|UI\UI.csproj|c:\work\tcipsupervisor\src\ui\controllers\iinspectorformcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}" ViewBookmarkType="DocumentWell"/>
+																<ViewBookmark Name="ST:0:0:{70f2cc16-5085-4e06-a614-e153db4d01ef}" ViewBookmarkType="DocumentWell"/>
 															</DocumentGroup>
 															<DocumentGroup DockedWidth="1634">
 																<ViewBookmark Name="ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}" AccessOrder="1" ViewBookmarkType="DocumentWell" DockedWidth="1634"/>
 															</DocumentGroup>
 														</DocumentGroupContainer>
-														<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="1" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}" IsSelected="True" DockedHeight="676" DockedWidth="404.68905950096" FloatingTop="362" FloatingLeft="1004" FloatingHeight="684" FloatingWidth="521"/>
+														<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="1" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}" IsSelected="True" DockedHeight="676" DockedWidth="715.68905950096" FloatingTop="362" FloatingLeft="1004" FloatingHeight="684" FloatingWidth="521"/>
 													</DockGroup>
 													<DockGroup DockedHeight="287" DockedWidth="1024">
 														<TabGroup DockedHeight="287">
-															<ViewBookmark Name="ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}" DockedHeight="287"/>
 															<ViewBookmark Name="ST:0:0:{be4d7042-ba3f-11d2-840e-00c04f9902c1}" DockedHeight="287"/>
 															<ViewBookmark Name="ST:0:0:{28836128-fc2c-11d2-a433-00c04f72d18a}" DockedHeight="287"/>
 															<ViewBookmark Name="ST:0:0:{ecb7191a-597b-41f5-9843-03a4cf275dde}" DockedHeight="287"/>
@@ -2205,10 +2260,11 @@
 												</DockGroup>
 											</DockGroup>
 											<ViewBookmark Name="ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"/>
-											<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="301" IconResourcePackage="5fcc8577-4feb-4d04-ad72-d6c629b083cc" Name="ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}" IsSelected="True" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="685" FloatingLeft="465" FloatingHeight="691" FloatingWidth="861"/>
+											<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="301" IconResourcePackage="5fcc8577-4feb-4d04-ad72-d6c629b083cc" Name="ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="685" FloatingLeft="465" FloatingHeight="691" FloatingWidth="861"/>
 										</DockGroup>
 									</DockGroup>
 									<ViewBookmark Name="ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"/>
+									<ViewBookmark Name="ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}"/>
 								</DockGroup>
 							</DockRoot>
 						</AutoHideRoot>
@@ -2219,8 +2275,8 @@
 					<FloatSite FloatingTop="153.6" FloatingLeft="204.8" FloatingHeight="76.8" FloatingWidth="337.92">
 						<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{e830ec50-c2b5-11d2-9375-0080c747d9a0}" DockedHeight="100" DockedWidth="100" FloatingTop="153.6" FloatingLeft="204.8" FloatingHeight="76.8" FloatingWidth="337.92"/>
 					</FloatSite>
-					<FloatSite FloatingTop="211" FloatingLeft="2879" FloatingHeight="482" FloatingWidth="465">
-						<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="7" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{cf2ddc32-8cad-11d2-9302-005345000000}" IsSelected="True" DockedHeight="100" DockedWidth="100" FloatingTop="211" FloatingLeft="2879" FloatingHeight="482" FloatingWidth="465"/>
+					<FloatSite FloatingTop="211" FloatingLeft="1045" FloatingHeight="304" FloatingWidth="401">
+						<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="7" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{cf2ddc32-8cad-11d2-9302-005345000000}" IsSelected="True" DockedHeight="100" DockedWidth="100" FloatingTop="211" FloatingLeft="1045" FloatingHeight="304" FloatingWidth="401"/>
 					</FloatSite>
 					<FloatSite FloatingTop="234" FloatingLeft="2793" FloatingHeight="450" FloatingWidth="450">
 						<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="304" IconResourcePackage="0c6e6407-13fc-4878-869a-c8b4016c57fe" Name="ST:0:0:{1ea986c6-340f-42c8-892e-f5779818d569}" IsSelected="True" FloatingTop="234" FloatingLeft="2793" FloatingHeight="450" FloatingWidth="450"/>
@@ -2252,9 +2308,9 @@
 					<FloatSite FloatingTop="207" FloatingLeft="2591" FloatingHeight="450" FloatingWidth="450">
 						<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="313" IconResourcePackage="0c6e6407-13fc-4878-869a-c8b4016c57fe" Name="ST:0:0:{888c821a-6430-40bd-9bfe-1610b91df560}" IsSelected="True" FloatingTop="207" FloatingLeft="2591" FloatingHeight="450" FloatingWidth="450"/>
 					</FloatSite>
-					<FloatSite FloatingTop="685" FloatingLeft="465" FloatingHeight="691" FloatingWidth="861">
-						<TabGroup DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="685" FloatingLeft="465" FloatingHeight="691" FloatingWidth="861">
-							<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="6" IconResourceID="6650" IconResourcePackage="4a9b7e50-aa16-11d0-a8c5-00a0c921a4d2" Name="ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}" IsSelected="True" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="685" FloatingLeft="465" FloatingHeight="691" FloatingWidth="861"/>
+					<FloatSite FloatingTop="684" FloatingLeft="3" FloatingHeight="691" FloatingWidth="861">
+						<TabGroup DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="684" FloatingLeft="3" FloatingHeight="691" FloatingWidth="861">
+							<ViewBookmark Name="ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}" AccessOrder="1" ViewBookmarkType="Raft" DockedHeight="337.052098408104" DockedWidth="853" FloatingHeight="691" FloatingWidth="861"/>
 							<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{be4d7042-ba3f-11d2-840e-00c04f9902c1}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="691" FloatingWidth="861"/>
 							<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{28836128-fc2c-11d2-a433-00c04f72d18a}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="691" FloatingWidth="861"/>
 							<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{ecb7191a-597b-41f5-9843-03a4cf275dde}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="691" FloatingWidth="861"/>
@@ -2268,9 +2324,9 @@
 							<wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{92547016-2bd0-4dfe-bd4f-5b52bdce0037}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="691" FloatingWidth="861"/>
 							<wm:ToolWindowView Name="ST:0:0:{b869198c-f673-46d2-83ae-64f515277716}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="691" FloatingWidth="861"/>
 							<wm:ToolWindowView Name="ST:0:0:{b8399b49-7330-487b-9235-7d2e969d0a79}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="691" FloatingWidth="861"/>
-							<wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{778b5376-ad77-4751-acdc-f3d18343f8dd}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="691" FloatingWidth="861"/>
+							<wm:ToolWindowView ForceCreate="DontForceCreate" Name="ST:0:0:{778b5376-ad77-4751-acdc-f3d18343f8dd}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="691" FloatingWidth="861"/>
 							<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{0f887920-c2b6-11d2-9375-0080c747d9a0}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="691" FloatingWidth="861"/>
-							<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="12" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{0f887921-c2b6-11d2-9375-0080c747d9a0}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="643" FloatingLeft="795" FloatingHeight="691" FloatingWidth="861"/>
+							<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="12" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{0f887921-c2b6-11d2-9375-0080c747d9a0}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="315" FloatingLeft="280" FloatingHeight="691" FloatingWidth="861"/>
 							<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{68487888-204a-11d3-87eb-00c04f7971a5}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="691" FloatingWidth="861"/>
 							<wm:ToolWindowView ContextVisibilityEnabled="False" Name="ST:0:0:{fdffccf2-5f63-404f-86ad-33693f544948}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="691" FloatingWidth="861"/>
 							<wm:ToolWindowView ContextVisibilityEnabled="False" Name="ST:0:0:{73f6dd5b-437e-11d3-b88e-00c04f79f802}" DockedHeight="337.052098408104" DockedWidth="853" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="691" FloatingWidth="861"/>
@@ -2410,7 +2466,7 @@
 							<DockRoot IsVisible="True" DockedHeight="*" DockedWidth="*">
 								<DockGroup IsVisible="True" DockedHeight="*" DockedWidth="*">
 									<TabGroup DockedHeight="652.8" DockedWidth="174.08">
-										<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}" DockedHeight="652.8" DockedWidth="174.08" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="537.6" FloatingWidth="204.8"/>
+										<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="0" IconResourceID="4" IconResourcePackage="8d8529d3-625d-4496-8354-3dad630ecc1b" Name="ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}" DockedHeight="652.8" DockedWidth="174.08" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="537.6" FloatingWidth="204.8"/>
 										<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{099ca9ea-0ae4-4e31-a7e4-fe09bd1715cc}" DockedHeight="652.8" DockedWidth="174.08" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="537.6" FloatingWidth="204.8"/>
 										<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}" DockedHeight="652.8" DockedWidth="174.08" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="537.6" FloatingWidth="204.8"/>
 										<wm:ToolWindowView Name="ST:0:0:{9f3ec988-1174-4746-a66a-3969715d1fc7}" DockedHeight="652.8" DockedWidth="174.08" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="537.6" FloatingWidth="204.8"/>
@@ -2427,7 +2483,7 @@
 											<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{ca4b8ff5-bfc7-11d2-9929-00c04f68fdaf}" DockedHeight="153.6" DockedWidth="819.2" FloatingTop="76.8" FloatingLeft="204.8" FloatingHeight="153.6" FloatingWidth="614.4"/>
 											<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{51c76317-9037-4cf2-a20a-6206fd30b4a1}" DockedHeight="153.6" DockedWidth="819.2" FloatingTop="76.8" FloatingLeft="204.8" FloatingHeight="153.6" FloatingWidth="614.4"/>
 											<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{e62ce6a0-b439-11d0-a79d-00a0c9110051}" DockedHeight="153.6" DockedWidth="819.2" FloatingTop="76.8" FloatingLeft="204.8" FloatingHeight="153.6" FloatingWidth="614.4"/>
-											<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{37aba9be-445a-11d3-9949-00c04f68fd0a}" DockedHeight="153.6" DockedWidth="819.2" FloatingTop="76.8" FloatingLeft="204.8" FloatingHeight="153.6" FloatingWidth="614.4"/>
+											<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="10" IconResourceID="5123" IconResourcePackage="c9dd4a57-47fb-11d2-83e7-00c04f9902c1" Name="ST:0:0:{37aba9be-445a-11d3-9949-00c04f68fd0a}" DockedHeight="153.6" DockedWidth="819.2" FloatingTop="76.8" FloatingLeft="204.8" FloatingHeight="153.6" FloatingWidth="614.4"/>
 										</TabGroup>
 										<DocumentGroupContainer Orientation="Vertical" IsVisible="True" DockedHeight="*" DockedWidth="*">
 											<DocumentGroup>
@@ -2437,10 +2493,12 @@
 												<wm:ToolWindowView ContextVisibilityEnabled="False" Name="ST:0:0:{46c87f81-5a06-43a8-9e25-85d33bac49f8}" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="537.6" FloatingWidth="716.8"/>
 												<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="384" FloatingWidth="512"/>
 												<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{99b8fa2f-ab90-4f57-9c32-949f146f1914}" FloatingTop="76.8" FloatingLeft="102.4" FloatingHeight="537.6" FloatingWidth="716.8"/>
+												<wm:ToolWindowView ForceCreate="DontForceCreate" Name="ST:0:0:{1820bae5-c385-4492-9de5-e35c9cf17b18}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
 												<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{cf577b8c-4134-11d2-83e5-00c04f9902c1}" FloatingTop="192" FloatingLeft="327.68" FloatingHeight="384" FloatingWidth="358.4"/>
 												<wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{70f2cc26-5085-4e06-a614-e153db4d01ef}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
 												<wm:ToolWindowView ForceCreate="DontForceCreate" Name="ST:0:0:{93a69444-e846-4571-9e03-a8433ad9ddf9}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
 												<wm:ToolWindowView ForceCreate="DontForceCreate" Name="ST:0:0:{cb4d394c-6408-4607-8c42-0910d3147a4e}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
+												<wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{66e82009-f551-422e-814d-f717e635fff9}" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
 											</DocumentGroup>
 										</DocumentGroupContainer>
 										<DockGroup IsVisible="True" DockedHeight="192" DockedWidth="512">
@@ -2468,12 +2526,12 @@
 												<wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{53544c4d-5c18-11d3-ab71-0050040ae094}" DockedHeight="192" DockedWidth="512" FloatingTop="100" FloatingLeft="100" FloatingHeight="300" FloatingWidth="450"/>
 												<wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{9a7cebbb-dc5c-4986-bc49-962da46aa506}" DockedHeight="192" DockedWidth="512" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
 												<wm:ToolWindowView ForceCreate="ForceCreate" Name="ST:0:0:{dee22b65-9761-4a26-8fb2-759b971d6dfc}" DockedHeight="192" DockedWidth="512" FloatingTop="0" FloatingLeft="0" FloatingHeight="120" FloatingWidth="360"/>
-												<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="3" IconResourceID="5123" IconResourcePackage="c9dd4a57-47fb-11d2-83e7-00c04f9902c1" Name="ST:0:0:{0504ff91-9d61-11d0-a794-00a0c9110051}" IsVisible="True" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="409.6" FloatingHeight="192" FloatingWidth="460.8"/>
+												<wm:ToolWindowView OnTopWhenLastInContext="False" ForceCreate="ForceCreate" IconIndex="3" IconResourceID="5123" IconResourcePackage="c9dd4a57-47fb-11d2-83e7-00c04f9902c1" Name="ST:0:0:{0504ff91-9d61-11d0-a794-00a0c9110051}" IsVisible="True" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="409.6" FloatingHeight="192" FloatingWidth="460.8"/>
 												<wm:ToolWindowView Name="ST:0:0:{637792aa-f332-4bb5-be6c-066b0e88eced}" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="409.6" FloatingHeight="192" FloatingWidth="460.8"/>
 												<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="2" IconResourceID="5123" IconResourcePackage="c9dd4a57-47fb-11d2-83e7-00c04f9902c1" Name="ST:0:0:{be4d7042-ba3f-11d2-840e-00c04f9902c1}" IsVisible="True" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="409.6" FloatingHeight="192" FloatingWidth="460.8"/>
-												<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="10" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{28836128-fc2c-11d2-a433-00c04f72d18a}" IsVisible="True" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="409.6" FloatingHeight="192" FloatingWidth="460.8"/>
+												<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="10" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{28836128-fc2c-11d2-a433-00c04f72d18a}" IsSelected="True" IsVisible="True" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="409.6" FloatingHeight="192" FloatingWidth="460.8"/>
 												<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" IconIndex="16" IconResourceID="6650" IconResourcePackage="da9fb551-c724-11d0-ae1f-00a0c90fffc3" Name="ST:0:0:{ecb7191a-597b-41f5-9843-03a4cf275dde}" IsVisible="True" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="409.6" FloatingHeight="192" FloatingWidth="460.8"/>
-												<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}" IsSelected="True" IsVisible="True" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="409.6" FloatingHeight="192" FloatingWidth="460.8"/>
+												<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}" IsVisible="True" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="409.6" FloatingHeight="192" FloatingWidth="460.8"/>
 												<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{588470cc-84f8-4a57-9ac4-86bca0625ff4}" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="409.6" FloatingHeight="192" FloatingWidth="460.8"/>
 												<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="409.6" FloatingHeight="192" FloatingWidth="460.8"/>
 												<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="409.6" FloatingHeight="192" FloatingWidth="460.8"/>
@@ -2648,6 +2706,10 @@
 												<ViewBookmark Name="D:0:0:{9AA9FD4D-58F4-4148-9376-EE09868E2B73}|IntegrationTests\IntegrationTests.csproj|c:\dev\headspring\udelldbsupport\src\integrationtests\prodgrpsls_smgmtest_with_lauries_values.csv||{8B382828-6202-11D1-8870-0000F87579D2}" ViewBookmarkType="DocumentWell"/>
 												<ViewBookmark Name="D:0:0:{FBE3CFE2-CAC1-4652-9F49-18F35B65123D}|Infrastructure\Infrastructure.csproj|c:\dev\headspring\udelldbsupport\src\infrastructure\dataaccess\mappings\spendmoregetmorehistoryentry.hbm.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}" ViewBookmarkType="DocumentWell"/>
 												<ViewBookmark Name="D:0:0:{9A25B8B5-5101-449B-A00D-BCFE27471316}|DataImporter\DataImporter.csproj|c:\dev\headspring\tcipserverimport\src\dataimporter\certificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}" ViewBookmarkType="DocumentWell"/>
+												<ViewBookmark Name="ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}" ViewBookmarkType="DocumentWell"/>
+												<ViewBookmark Name="D:0:0:{9AA9FD4D-58F4-4148-9376-EE09868E2B73}|IntegrationTests\IntegrationTests.csproj|c:\work\tcipsupervisor\src\integrationtests\scratchtests\scratchintegrationtester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}" ViewBookmarkType="DocumentWell"/>
+												<ViewBookmark Name="D:0:0:{98200972-A038-4DA8-8917-CBC4895175DC}|UI\UI.csproj|c:\work\tcipsupervisor\src\ui\controllers\iinspectorformcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}" ViewBookmarkType="DocumentWell"/>
+												<ViewBookmark Name="ST:0:0:{70f2cc16-5085-4e06-a614-e153db4d01ef}" ViewBookmarkType="DocumentWell"/>
 											</DocumentGroup>
 											<DocumentGroup>
 												<ViewBookmark Name="ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}" ViewBookmarkType="DocumentWell"/>
@@ -2691,7 +2753,6 @@
 												<wm:ToolWindowView Name="ST:0:0:{b869198c-f673-46d2-83ae-64f515277716}" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="192" FloatingWidth="460.8"/>
 												<wm:ToolWindowView Name="ST:0:0:{b8399b49-7330-487b-9235-7d2e969d0a79}" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="192" FloatingWidth="460.8"/>
 												<wm:ToolWindowView ForceCreate="DontForceCreate" Name="ST:0:0:{778b5376-ad77-4751-acdc-f3d18343f8dd}" DockedHeight="192" DockedWidth="512" FloatingTop="576" FloatingLeft="102.4" FloatingHeight="192" FloatingWidth="460.8"/>
-												<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="104" IconResourcePackage="8889e051-b7f9-4781-bb33-2a36a9bdb3a5" Name="ST:0:0:{cdbdee54-b399-484b-b763-db2c3393d646}" DockedHeight="192" DockedWidth="512" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
 											</TabGroup>
 										</DockGroup>
 									</DockGroup>
@@ -2712,7 +2773,6 @@
 										<wm:ToolWindowView ContextVisibilityEnabled="False" Name="ST:0:0:{73f6dd58-437e-11d3-b88e-00c04f79f802}" DockedHeight="652.8" DockedWidth="174.08" FloatingTop="76.8" FloatingLeft="819.2" FloatingHeight="537.6" FloatingWidth="204.8"/>
 										<wm:ToolWindowView ContextVisibilityEnabled="False" Name="ST:0:0:{57dc5d59-11c2-4955-a7b4-d7699d677e93}" DockedHeight="652.8" DockedWidth="174.08" FloatingTop="76.8" FloatingLeft="819.2" FloatingHeight="537.6" FloatingWidth="204.8"/>
 										<wm:ToolWindowView ContextVisibilityEnabled="False" ForceCreate="ForceCreate" Name="ST:0:0:{07cd18b4-3ba1-11d2-890a-0060083196c6}" DockedHeight="652.8" DockedWidth="174.08" FloatingTop="76.8" FloatingLeft="819.2" FloatingHeight="537.6" FloatingWidth="204.8"/>
-										<wm:ToolWindowView ForceCreate="ForceCreate" IconIndex="0" IconResourceID="105" IconResourcePackage="8889e051-b7f9-4781-bb33-2a36a9bdb3a5" Name="ST:0:0:{a34b1c5d-6d37-4a0c-a8b0-99f8e8158b48}" DockedHeight="652.8" DockedWidth="174.08" FloatingTop="100" FloatingLeft="100" FloatingHeight="450" FloatingWidth="450"/>
 									</TabGroup>
 								</DockGroup>
 							</DockRoot>
@@ -2956,35 +3016,7 @@
 			</Design-FullScreen>
 		</Category>
 	</Category>
-	<Category name="Test Tools_Web Test" Category="{9DE2E186-C1A8-4BEE-B5D6-2BC59BBE140B}" Package="{a9405ae6-9ac6-4f0e-a03f-7afe45f6fcb7}" RegisteredName="Test Tools_Web Test" PackageName="Microsoft.VisualStudio.TestTools.TestCaseManagement.QualityToolsPackage, Microsoft.VisualStudio.QualityTools.TestCaseManagement, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-		<PropertyValue name="AttemptDependentMatching">True</PropertyValue>
-		<PropertyValue name="BinaryHttpBodyContentTypes">application/soap+msbin1</PropertyValue>
-		<PropertyValue name="DetectDynamicParameters">True</PropertyValue>
-		<PropertyValue name="ExtractBindHiddenFields">True</PropertyValue>
-		<PropertyValue name="RecordFromMultipleBrowsers">True</PropertyValue>
-		<PropertyValue name="StartingURL">about:blank</PropertyValue>
-	</Category>
-	<Category name="Performance" Category="{7A697B67-8D8F-43c2-A11C-57568FE3F513}" Package="{f4a63b2a-49ab-4b2d-aa59-a10f01026c89}" RegisteredName="Performance" PackageName="PerformancePackage">
-		<PropertyValue name="toolsoptions.numfunc">5</PropertyValue>
-		<PropertyValue name="toolsoptions.showtimetick">0</PropertyValue>
-		<PropertyValue name="toolsoptions.numbuffer">64</PropertyValue>
-		<PropertyValue name="toolsoptions.sizebuffer">64</PropertyValue>
-		<PropertyValue name="toolsoptions.serialize">1</PropertyValue>
-		<PropertyValue name="performancereport.showquery">0</PropertyValue>
-		<PropertyValue name="toolsoptions.formatcounters">1</PropertyValue>
-		<PropertyValue name="toolsoptions.exportpath"/>
-		<PropertyValue name="toolsoptions.exportformat">csv</PropertyValue>
-		<PropertyValue name="performancereport.hotpathcandidateratio">3.0</PropertyValue>
-		<PropertyValue name="performancereport.shownoisereductionwarning">1</PropertyValue>
-		<PropertyValue name="performancereport.noisereductiontrim">1</PropertyValue>
-		<PropertyValue name="performancereport.noisereductionfold">1</PropertyValue>
-		<PropertyValue name="performancereport.noisereductiontrimthreshold">2.0</PropertyValue>
-		<PropertyValue name="performancereport.noisereductionfoldthreshold">3.0</PropertyValue>
-		<PropertyValue name="tools.options.justmycode">1</PropertyValue>
-		<PropertyValue name="tools.options.justmycode.callee">1</PropertyValue>
-		<PropertyValue name="tools.options.justmycode.caller">0</PropertyValue>
-		<PropertyValue name="tools.options.rules.actions"/>
-	</Category>
+	<Category name="Code Analysis" Category="{533A534C-AD06-4B18-BBBC-BFD7C74F58CE}" Package="{72391CE3-743A-4a55-8927-4217541F6517}" RegisteredName="Code Analysis" PackageName="StanPackage"/>
 	<Category name="Debugger" Category="{EEDBF29A-5C8B-4E01-827C-263382C18CFE}" Package="{C9DD4A57-47FB-11D2-83E7-00C04F9902C1}" RegisteredName="Debugger" PackageName="Visual Studio Debugger">
 		<PropertyValue name="ConfirmDeleteAllBreakpoints">1</PropertyValue>
 		<PropertyValue name="StopAllProcesses">1</PropertyValue>
@@ -2994,7 +3026,7 @@
 		<PropertyValue name="EnableBreakpointConstraints">1</PropertyValue>
 		<PropertyValue name="UseExceptionHelper">1</PropertyValue>
 		<PropertyValue name="AutoUnwindOnException">1</PropertyValue>
-		<PropertyValue name="JustMyCode">1</PropertyValue>
+		<PropertyValue name="JustMyCode">0</PropertyValue>
 		<PropertyValue name="ShowNonPublicMembers">0</PropertyValue>
 		<PropertyValue name="WarnIfNoUserCodeOnLaunch">1</PropertyValue>
 		<PropertyValue name="FrameworkSourceStepping">0</PropertyValue>
@@ -3121,6 +3153,27 @@
 		<PropertyValue name="SymbolExcludeListState"/>
 	</Category>
 	<Category name="HTML Tag Specific" Category="{7583bb73-a453-40e8-8951-b6986ddb1d9b}" Package="{1B437D20-F8FE-11D2-A6AE-00104BCC7269}" RegisteredName="HTML Tag Specific" PackageName="Visual Studio HTM Editor Package"/>
+	<Category name="Performance" Category="{7A697B67-8D8F-43c2-A11C-57568FE3F513}" Package="{f4a63b2a-49ab-4b2d-aa59-a10f01026c89}" RegisteredName="Performance" PackageName="PerformancePackage">
+		<PropertyValue name="toolsoptions.numfunc">5</PropertyValue>
+		<PropertyValue name="toolsoptions.showtimetick">0</PropertyValue>
+		<PropertyValue name="toolsoptions.numbuffer">64</PropertyValue>
+		<PropertyValue name="toolsoptions.sizebuffer">64</PropertyValue>
+		<PropertyValue name="toolsoptions.serialize">1</PropertyValue>
+		<PropertyValue name="performancereport.showquery">0</PropertyValue>
+		<PropertyValue name="toolsoptions.formatcounters">1</PropertyValue>
+		<PropertyValue name="toolsoptions.exportpath"/>
+		<PropertyValue name="toolsoptions.exportformat">csv</PropertyValue>
+		<PropertyValue name="performancereport.hotpathcandidateratio">3.0</PropertyValue>
+		<PropertyValue name="performancereport.shownoisereductionwarning">1</PropertyValue>
+		<PropertyValue name="performancereport.noisereductiontrim">1</PropertyValue>
+		<PropertyValue name="performancereport.noisereductionfold">1</PropertyValue>
+		<PropertyValue name="performancereport.noisereductiontrimthreshold">2.0</PropertyValue>
+		<PropertyValue name="performancereport.noisereductionfoldthreshold">3.0</PropertyValue>
+		<PropertyValue name="tools.options.justmycode">1</PropertyValue>
+		<PropertyValue name="tools.options.justmycode.callee">1</PropertyValue>
+		<PropertyValue name="tools.options.justmycode.caller">0</PropertyValue>
+		<PropertyValue name="tools.options.rules.actions"/>
+	</Category>
 	<Category name="SQL_Editor" Category="{7d092b67-f9b8-4de4-a60e-298bada6f735}" Package="{cd5a6b66-0d89-4949-b356-361cf0d74372}" RegisteredName="SQL_Editor" PackageName="RadLangSvc.Package, RadLangSvc.VS, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
 		<PropertyValue name="AutoOutlining">True</PropertyValue>
 		<PropertyValue name="EnableIntellisense">True</PropertyValue>
@@ -3149,6 +3202,14 @@
 		<PropertyValue name="GetLatestOnCheckOut">false</PropertyValue>
 		<PropertyValue name="OpenSceToMostRecentPath">true</PropertyValue>
 		<PropertyValue name="PromptToConfirmMergeResult">-1</PropertyValue>
+	</Category>
+	<Category name="Test Tools_Web Test" Category="{9DE2E186-C1A8-4BEE-B5D6-2BC59BBE140B}" Package="{a9405ae6-9ac6-4f0e-a03f-7afe45f6fcb7}" RegisteredName="Test Tools_Web Test" PackageName="Microsoft.VisualStudio.TestTools.TestCaseManagement.QualityToolsPackage, Microsoft.VisualStudio.QualityTools.TestCaseManagement, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+		<PropertyValue name="AttemptDependentMatching">True</PropertyValue>
+		<PropertyValue name="BinaryHttpBodyContentTypes">application/soap+msbin1</PropertyValue>
+		<PropertyValue name="DetectDynamicParameters">True</PropertyValue>
+		<PropertyValue name="ExtractBindHiddenFields">True</PropertyValue>
+		<PropertyValue name="RecordFromMultipleBrowsers">True</PropertyValue>
+		<PropertyValue name="StartingURL">about:blank</PropertyValue>
 	</Category>
 	<Category name="WindowsFormsDesigner_General" Category="{de03177c-918d-40af-8c17-c9d63670c175}" Package="{7b5d447b-0b12-41ea-a84e-c822034422d4}" RegisteredName="WindowsFormsDesigner_General" PackageName="Windows Forms Designer Resources Package">
 		<PropertyValue name="AutoToolboxPopulate">True</PropertyValue>
